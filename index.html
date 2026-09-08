@@ -22,8 +22,9 @@
     body{background:var(--bg); color:var(--ink); font-family:'Inter',sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
 
     /* HEADER */
-    header{background:var(--card); border-bottom:1px solid var(--light); padding:14px 24px; display:flex; justify-space-between; align-items:center; position:sticky; top:0; z-index:100}
-    .logo{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:1.35rem; color:var(--ink); text-decoration:none; display:flex; align-items:center; gap:8px}
+    header{background:var(--card); border-bottom:1px solid var(--light); padding:14px 24px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100}
+    .logo{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:1.35rem; color:var(--ink); text-decoration:none; display:flex; align-items:center; gap:10px}
+    .logo-img{width:34px; height:34px; border-radius:50%; object-fit:cover; border:1.5px solid var(--accent)}
     .logo span{background:var(--accent); color:#fff; border-radius:6px; padding:2px 8px; font-size:0.85rem; font-weight:700}
     .btn-header{background:var(--accent); color:#fff; font-weight:600; text-decoration:none; padding:9px 18px; border-radius:30px; font-size:0.875rem; transition:background 0.2s}
     .btn-header:hover{background:var(--accent2)}
@@ -68,7 +69,7 @@
     .btn-card{background:var(--bg); color:var(--ink); font-weight:600; font-size:0.85rem; padding:10px 16px; border-radius:20px; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:6px; transition:background 0.2s; margin-top:auto}
     .btn-card:hover{background:var(--accent); color:#fff}
 
-    /* GALERIA / TRABAJOS (MODIFICADO PARA PERMITIR SLIDE DE FOTOS) */
+    /* GALERIA / TRABAJOS */
     .trabajos-section{background:var(--card); border-y:1px solid var(--light); padding:56px 24px; border-top:1px solid var(--light); border-bottom:1px solid var(--light)}
     .trabajos-inner{max-width:960px; margin:0 auto}
     
@@ -89,7 +90,7 @@
     }
 
     .trabajo-card {
-      flex: 0 0 280px; /* Ancho fijo para cada tarjeta, forzando scroll si hay varias */
+      flex: 0 0 280px;
       max-width: 85vw;
       border-radius: var(--radius-sm);
       overflow: hidden;
@@ -154,9 +155,12 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- HEADER -->
+  <!-- HEADER CON LOGO -->
   <header>
-    <a href="#" class="logo">Resuelto <span>Zona Sur</span></a>
+    <a href="#" class="logo">
+      <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaDominica.png" alt="Logo Resuelto" class="logo-img"/>
+      Resuelto <span>Zona Sur</span>
+    </a>
     <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20pedir%20un%20presupuesto" class="btn-header" target="_blank" rel="noopener">Pedir Presupuesto</a>
   </header>
 
@@ -268,7 +272,7 @@
     </div>
   </section>
 
-  <!-- TRABAJOS REALIZADOS (VARIAS IMÁGENES PARA PROBAR EL SLIDE) -->
+  <!-- TRABAJOS REALIZADOS -->
   <section class="trabajos-section">
     <div class="trabajos-inner">
       <div class="section-title">
@@ -277,40 +281,39 @@
       </div>
       <div class="trabajo-galeria">
         <div class="trabajo-card">
-          <img src="foto1.jpg" alt="Pintura integral de living" onerror="this.src='https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80'"/>
+          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaDominica.png" alt="Cocina Dominica"/>
           <div class="trabajo-card-info">
-            <h4>Pintura Interior</h4>
+            <h4>Cocina Dominica</h4>
             <p>Avellaneda Centro</p>
           </div>
         </div>
 
         <div class="trabajo-card">
-          <img src="foto2.jpg" alt="Tabique de Durlock con puerta" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80'"/>
+          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaPrevind.png" alt="Cocina Prevind"/>
           <div class="trabajo-card-info">
-            <h4>División en Durlock</h4>
+            <h4>Cocina Prevind</h4>
             <p>Lanús Oeste</p>
           </div>
         </div>
 
         <div class="trabajo-card">
-          <img src="foto3.jpg" alt="Impermeabilización de terraza" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80'"/>
+          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/PasilloMb.png" alt="Pasillo Mb"/>
           <div class="trabajo-card-info">
-            <h4>Membrana en Terraza</h4>
+            <h4>Pasillo Mb</h4>
             <p>Lomas de Zamora</p>
           </div>
         </div>
 
-        <!-- Imágenes adicionales para probar el deslizamiento / scroll -->
         <div class="trabajo-card">
-          <img src="foto4.jpg" alt="Cielorraso suspendido" onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'"/>
+          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/SalaOsde.png" alt="Sala Osde"/>
           <div class="trabajo-card-info">
-            <h4>Cielorraso Decorativo</h4>
+            <h4>Sala Osde</h4>
             <p>Banfield</p>
           </div>
         </div>
 
         <div class="trabajo-card">
-          <img src="foto5.jpg" alt="Pintura de fachada" onerror="this.src='https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80'"/>
+          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250227_182940714.jpg" alt="Trabajo reciente"/>
           <div class="trabajo-card-info">
             <h4>Pintura Exterior</h4>
             <p>Wilde</p>
