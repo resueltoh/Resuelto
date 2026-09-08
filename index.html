@@ -1,361 +1,412 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5F48JBZK');</script>
-<!-- End Google Tag Manager -->
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Resuelto · Servicios del hogar en Avellaneda, Lanús y Lomas de Zamora</title>
-<meta name="description" content="Pintura, durlock, impermeabilización y arreglos rápidos en Avellaneda, Lanús y Lomas de Zamora. Un solo número para todo lo que necesita tu casa. Presupuesto sin cargo."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--dark: #1E1E1A; --dark2: #141412; --accent: #4A6741; --accent2: #6A8F61; --bg: #F7F6F2; --card: #FDFCF9; --ink: #1C1C18; --mid: #6B6860; --light: #E4E1DA; --white: #FDFCF9; --tint: #EEF2EB; --wa: #25D366; }
-html{scroll-behavior:smooth}
-body{background:var(--bg); color:var(--ink); font-family:'Inter',sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
-/* ── HEADER ── */
-header{background:var(--card); border-bottom:1px solid var(--light); padding:14px 24px; display:flex; align-items:center; justify-content:space-between; position:sticky;top:0;z-index:100; }
-.logo{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800;font-size:1.35rem; color:var(--ink);letter-spacing:-.01em; display:flex;align-items:center;gap:9px; }
-.logo-check{width:22px;height:22px;border-radius:50%; background:var(--accent); display:flex;align-items:center;justify-content:center; flex-shrink:0; }
-.cta-header{background:var(--wa);color:#fff; font-size:.8rem;font-weight:700; padding:8px 16px;border-radius:6px; text-decoration:none;white-space:nowrap; display:flex;align-items:center;gap:6px; }
-/* ── STRIP ── */
-.strip{background:var(--accent); text-align:center;padding:8px 16px; font-size:.75rem;font-weight:600; color:#fff;letter-spacing:.05em; text-transform:uppercase; }
-/* ── HERO ── */
-.hero{background:var(--card); border-bottom:1px solid var(--light); padding:60px 24px 56px; text-align:center;position:relative;overflow:hidden; }
-.hero::before{content:'';position:absolute; inset:0; background:repeating-linear-gradient(-55deg,transparent,transparent 32px, rgba(30,30,26,.022) 32px,rgba(30,30,26,.022) 33px ); pointer-events:none; }
-.hero-label{display:inline-block; font-size:.72rem;font-weight:600; letter-spacing:.14em;text-transform:uppercase; color:var(--mid);margin-bottom:20px; }
-/* tilde animado */
-.hero-tick-wrap{margin:0 auto 24px;width:72px;height:72px}
-.tick-circle{width:72px;height:72px;border-radius:50%; background:var(--accent); display:flex;align-items:center;justify-content:center; box-shadow:0 6px 24px rgba(74,103,65,.25); }
-.tick-svg{width:38px;height:38px}
-.tick-path{stroke:#fff;stroke-width:5; stroke-linecap:round;stroke-linejoin:round;fill:none; stroke-dasharray:60;stroke-dashoffset:60; animation:drawTick .6s cubic-bezier(.4,0,.2,1) .3s forwards; }
-@keyframes drawTick{to{stroke-dashoffset:0}}
-.hero h1{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:clamp(2.6rem,11vw,4.4rem); color:var(--ink);line-height:1.0; letter-spacing:-.02em; max-width:560px;margin:0 auto 16px; }
-.hero h1 em{font-style:normal;color:var(--accent)}
-.hero-sub{color:var(--mid);font-size:.95rem; max-width:360px;margin:0 auto 32px;line-height:1.6; }
-.btn-wa{display:inline-flex;align-items:center;gap:10px; background:var(--wa);color:#fff; font-size:1rem;font-weight:700; padding:16px 28px;border-radius:8px; text-decoration:none; box-shadow:0 4px 24px rgba(37,211,102,.3); transition:transform .15s,box-shadow .15s; }
-.btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 32px rgba(37,211,102,.45)}
-/* ── TRUST ── */
-.trust{background:var(--card);border-bottom:1px solid var(--light); padding:14px 24px; display:flex;justify-content:center;gap:24px;flex-wrap:wrap; }
-.trust-item{display:flex;align-items:center;gap:6px; font-size:.76rem;font-weight:600;color:var(--mid); }
-.trust-dot{width:7px;height:7px;border-radius:50%; background:var(--accent);flex-shrink:0; }
-/* ── SHARED SECTION ── */
-.section{padding:56px 24px;max-width:660px;margin:0 auto}
-.eyebrow{font-size:.68rem;font-weight:600; letter-spacing:.14em;text-transform:uppercase; color:var(--accent);margin-bottom:6px; }
-.section-title{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:clamp(1.7rem,5.5vw,2.4rem); line-height:1.05;letter-spacing:-.02em;margin-bottom:28px; }
-/* ── SERVICIOS ── */
-.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.svc{background:var(--card);border:1px solid var(--light); border-radius:10px;padding:18px 16px; border-top:3px solid var(--accent); transition:box-shadow .15s; }
-.svc:hover{box-shadow:0 4px 16px rgba(0,0,0,.07)}
-.svc.sec{border-top-color:var(--accent2)}
-.svc-icon{font-size:1.5rem;margin-bottom:8px}
-.svc h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700; font-size:1rem;letter-spacing:-.01em;margin-bottom:3px; }
-.svc p{font-size:.8rem;color:var(--mid);line-height:1.45}
-/* ── HOW ── */
-.how-section{background:var(--tint); border-top:1px solid var(--light);border-bottom:1px solid var(--light); padding:56px 24px}
-.how-inner{max-width:660px;margin:0 auto}
-.how-section .eyebrow{color:var(--accent)}
-.how-section .section-title{color:var(--ink);margin-bottom:32px}
-.steps{display:flex;flex-direction:column}
-.step{display:flex;gap:16px;padding:20px 0; border-bottom:1px solid rgba(30,30,26,.09); }
-.step:last-child{border-bottom:none}
-.step-num{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800; font-size:2.2rem;color:var(--accent); line-height:1;flex-shrink:0;width:40px;padding-top:2px; }
-.step-body strong{display:block;color:var(--ink); font-size:.95rem;font-weight:600;margin-bottom:3px; }
-.step-body span{color:var(--mid);font-size:.85rem;line-height:1.5}
-/* ── WHY ── */
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.why-card{background:var(--card);border:1px solid var(--light); border-radius:10px;padding:18px 16px; }
-.why-card .icon{font-size:1.4rem;margin-bottom:8px}
-.why-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700; font-size:.95rem;letter-spacing:-.01em;margin-bottom:4px; }
-.why-card p{font-size:.8rem;color:var(--mid);line-height:1.45}
-/* ── PRECIOS ── */
-.price-card{background:var(--card);border:1px solid var(--light); border-radius:12px;overflow:hidden; }
-.price-row{display:flex;justify-content:space-between;align-items:center; gap:12px;padding:15px 18px; border-bottom:1px solid var(--light); }
-.price-row:last-child{border-bottom:none}
-.price-row:nth-child(even){background:var(--bg)}
-.price-name{font-size:.88rem;font-weight:500}
-.price-name small{display:block;color:var(--mid);font-size:.74rem;font-weight:400;margin-top:1px}
-.price-val{white-space:nowrap;font-size:.88rem;text-align:right}
-.price-val strong{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem}
-.price-val span{color:var(--mid);font-size:.74rem}
-.price-example{margin-top:16px;padding:16px 18px; background:var(--card);border:1px solid var(--light); border-left:4px solid var(--accent); border-radius:10px; font-size:.88rem;line-height:1.55; }
-.price-example strong{font-weight:600}
-.price-note{color:var(--mid);font-size:.74rem;line-height:1.6;margin-top:16px}
-.price-cta{margin-top:28px;text-align:center}
-.price-cta .sub{color:var(--mid);font-size:.76rem;margin-top:10px}
-/* ── FAQ ── */
-.faq-section{padding:56px 24px;max-width:660px;margin:0 auto}
-.faq-item{border-bottom:1px solid var(--light);padding:15px 0}
-.faq-item:last-child{border-bottom:none}
-.faq-q{font-weight:600;font-size:.92rem;cursor:pointer; display:flex;justify-content:space-between;align-items:center;gap:8px; }
-.faq-q .arr{color:var(--accent);font-size:1rem;transition:transform .2s;flex-shrink:0}
-.faq-a{font-size:.84rem;color:var(--mid);line-height:1.6;display:none;padding-top:8px}
-.faq-item.open .faq-a{display:block}
-.faq-item.open .arr{transform:rotate(180deg)}
-/* ── ZONA ── */
-.zona-section{background:var(--card); border-top:1px solid var(--light);border-bottom:1px solid var(--light); padding:44px 24px;text-align:center; }
-.zona-inner{max-width:660px;margin:0 auto}
-.zona-inner p{color:var(--mid);margin-bottom:18px;font-size:.9rem}
-.zona-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.zona-tags span{background:var(--bg);border:1px solid var(--light); border-radius:20px;padding:5px 14px;font-size:.78rem;font-weight:500; }
-/* ── CTA FINAL ── */
-.cta-section{background:var(--tint); border-bottom:1px solid var(--light); padding:64px 24px;text-align:center}
-.cta-section h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800; font-size:clamp(1.9rem,7vw,2.8rem); color:var(--ink);line-height:1.05; letter-spacing:-.02em; max-width:480px;margin:0 auto 10px; }
-.cta-section h2 em{font-style:normal;color:var(--accent)}
-.cta-section p{color:var(--mid);margin-bottom:28px;font-size:.9rem}
-/* ── FOOTER ── */
-footer{background:var(--bg);text-align:center; padding:20px 24px;font-size:.72rem;color:var(--mid); }
-/* ── WA FLOAT ── */
-.wa-float{position:fixed;bottom:22px;right:22px;z-index:999; background:var(--wa);width:56px;height:56px;border-radius:50%; display:flex;align-items:center;justify-content:center; box-shadow:0 4px 18px rgba(0,0,0,.28); text-decoration:none;transition:transform .15s; }
-.wa-float:hover{transform:scale(1.08)}
-@media(max-width:420px){.services-grid,.why-grid{grid-template-columns:1fr} .trust{gap:12px} }
-</style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5F48JZK');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resuelto · Servicios del hogar en Avellaneda, Lanús y Lomas de Zamora</title>
+  <meta name="description" content="Pintura, durlock, impermeabilización y arreglos rápidos en Avellaneda, Lanús y Lomas de Zamora. Trabajo profesional, garantizado y sin vueltas."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--dark: #1E1E1A; --dark2: #141412; --accent: #4A6741; --accent2: #6A8F61; --bg: #F7F6F2; --card: #FFFFFF; --text: #2C2C2A; --muted: #767670; --light: #EBEAE5; --ink: #111110; --radius: 16px; --radius-sm: 10px}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg); color:var(--ink); font-family:'Inter',sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
+
+    /* HEADER */
+    header{background:var(--card); border-bottom:1px solid var(--light); padding:14px 24px; display:flex; justify-space-between; align-items:center; position:sticky; top:0; z-index:100}
+    .logo{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:1.35rem; color:var(--ink); text-decoration:none; display:flex; align-items:center; gap:8px}
+    .logo span{background:var(--accent); color:#fff; border-radius:6px; padding:2px 8px; font-size:0.85rem; font-weight:700}
+    .btn-header{background:var(--accent); color:#fff; font-weight:600; text-decoration:none; padding:9px 18px; border-radius:30px; font-size:0.875rem; transition:background 0.2s}
+    .btn-header:hover{background:var(--accent2)}
+
+    /* HERO */
+    .hero{padding:56px 24px 40px; max-width:860px; margin:0 auto; text-align:center}
+    .hero-badge{display:inline-flex; align-items:center; gap:6px; background:var(--card); border:1px solid var(--light); border-radius:20px; padding:6px 14px; font-size:0.825rem; font-weight:500; color:var(--muted); margin-bottom:20px}
+    .hero-badge .dot{width:7px; height:7px; background:#38a169; border-radius:50%}
+    .hero h1{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:2.6rem; line-height:1.15; letter-spacing:-0.03em; margin-bottom:16px; color:var(--ink)}
+    .hero h1 span{color:var(--accent)}
+    .hero p{font-size:1.125rem; color:var(--muted); max-width:580px; margin:0 auto 32px; font-weight:400}
+    .hero-cta{display:flex; flex-direction:column; gap:12px; align-items:center}
+    @media(min-width:480px){.hero-cta{flex-direction:row; justify-content:center}}
+    .btn-primary{background:var(--accent); color:#fff; font-weight:600; font-size:1.05rem; padding:15px 30px; border-radius:30px; text-decoration:none; display:inline-flex; align-items:center; gap:10px; width:100%; max-width:320px; justify-content:center; transition:background 0.2s,transform 0.1s; box-shadow:0 4px 16px rgba(74,103,65,0.25)}
+    .btn-primary:hover{background:var(--accent2); transform:translateY(-1px)}
+    .btn-secondary{background:var(--card); color:var(--ink); border:1px solid var(--light); font-weight:600; font-size:1rem; padding:15px 28px; border-radius:30px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; width:100%; max-width:320px; justify-content:center; transition:border-color 0.2s}
+    .btn-secondary:hover{border-color:var(--muted)}
+
+    /* GARANTIAS */
+    .garantias{background:var(--card); border-y:1px solid var(--light); padding:28px 24px; border-top:1px solid var(--light); border-bottom:1px solid var(--light)}
+    .garantias-inner{max-width:960px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; text-align:center}
+    .garantia-item{padding:8px}
+    .garantia-item .icon{font-size:1.5rem; margin-bottom:6px}
+    .garantia-item h4{font-family:'Plus Jakarta Sans',sans-serif; font-size:0.95rem; font-weight:700; margin-bottom:2px}
+    .garantia-item p{font-size:0.825rem; color:var(--muted)}
+
+    /* SERVICIOS */
+    .section{padding:56px 24px; max-width:960px; margin:0 auto}
+    .section-title{text-align:center; margin-bottom:36px}
+    .section-title h2{font-family:'Plus Jakarta Sans',sans-serif; font-size:1.85rem; font-weight:800; letter-spacing:-0.02em; margin-bottom:8px}
+    .section-title p{color:var(--muted); font-size:0.975rem}
+
+    .grid-servicios{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px}
+    .card-servicio{background:var(--card); border:1px solid var(--light); border-radius:var(--radius); padding:24px; transition:border-color 0.2s,box-shadow 0.2s; display:flex; flex-direction:column; justify-content:space-between}
+    .card-servicio:hover{border-color:var(--accent); box-shadow:0 6px 20px rgba(0,0,0,0.05)}
+    .card-servicio .icon{width:44px; height:44px; background:var(--bg); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.25rem; margin-bottom:16px}
+    .card-servicio h3{font-family:'Plus Jakarta Sans',sans-serif; font-size:1.15rem; font-weight:700; margin-bottom:8px}
+    .card-servicio p{font-size:0.875rem; color:var(--muted); margin-bottom:16px; line-height:1.55}
+    .card-servicio ul{list-style:none; margin-bottom:20px}
+    .card-servicio ul li{font-size:0.825rem; color:var(--text); padding:3px 0; display:flex; align-items:center; gap:6px}
+    .card-servicio ul li::before{content:"✓"; color:var(--accent); font-weight:bold; font-size:0.85rem}
+    .btn-card{background:var(--bg); color:var(--ink); font-weight:600; font-size:0.85rem; padding:10px 16px; border-radius:20px; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:6px; transition:background 0.2s; margin-top:auto}
+    .btn-card:hover{background:var(--accent); color:#fff}
+
+    /* GALERIA / TRABAJOS (MODIFICADO PARA PERMITIR SLIDE DE FOTOS) */
+    .trabajos-section{background:var(--card); border-y:1px solid var(--light); padding:56px 24px; border-top:1px solid var(--light); border-bottom:1px solid var(--light)}
+    .trabajos-inner{max-width:960px; margin:0 auto}
+    
+    .trabajo-galeria {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 10px 0 20px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .trabajo-galeria::-webkit-scrollbar {
+      height: 6px;
+    }
+    .trabajo-galeria::-webkit-scrollbar-thumb {
+      background: var(--muted);
+      border-radius: 10px;
+    }
+
+    .trabajo-card {
+      flex: 0 0 280px; /* Ancho fijo para cada tarjeta, forzando scroll si hay varias */
+      max-width: 85vw;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--light);
+      scroll-snap-align: start;
+      background: var(--bg);
+    }
+    .trabajo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .trabajo-card-info {
+      padding: 12px;
+    }
+    .trabajo-card-info h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .trabajo-card-info p {
+      font-size: 0.775rem;
+      color: var(--muted);
+    }
+
+    /* ZONAS */
+    .zonas-list{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:20px}
+    .zona-chip{background:var(--card); border:1px solid var(--light); padding:8px 16px; border-radius:20px; font-size:0.875rem; font-weight:500; display:flex; align-items:center; gap:6px}
+
+    /* PASOS */
+    .pasos-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; position:relative}
+    .paso-card{text-align:center; padding:16px}
+    .paso-num{width:40px; height:40px; background:var(--accent); color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:1.1rem; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 14px}
+    .paso-card h3{font-size:1rem; font-weight:700; margin-bottom:6px}
+    .paso-card p{font-size:0.85rem; color:var(--muted)}
+
+    /* TESTIMONIOS */
+    .testimonios-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px}
+    .testimonio-card{background:var(--card); border:1px solid var(--light); border-radius:var(--radius); padding:20px}
+    .testimonio-stars{color:#f59e0b; font-size:0.9rem; margin-bottom:8px}
+    .testimonio-text{font-size:0.875rem; color:var(--text); margin-bottom:12px; font-style:italic}
+    .testimonio-author{font-size:0.8rem; font-weight:600; color:var(--muted)}
+
+    /* CTA FINAL */
+    .cta-banner{background:var(--dark); color:#fff; border-radius:24px; padding:48px 32px; text-align:center; margin:40px auto; max-width:860px}
+    .cta-banner h2{font-family:'Plus Jakarta Sans',sans-serif; font-size:2rem; font-weight:800; margin-bottom:12px; color:#fff}
+    .cta-banner p{color:#a1a19a; margin-bottom:28px; max-width:500px; margin-left:auto; margin-right:auto}
+
+    /* FOOTER */
+    footer{background:var(--dark2); color:#767670; padding:32px 24px; text-align:center; font-size:0.825rem; border-top:1px solid #2a2a26}
+    footer a{color:#a1a19a; text-decoration:none}
+
+    /* WHATSAPP FLOAT */
+    .wa-float{position:fixed; bottom:24px; right:24px; background:#25D366; color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow:0 6px 20px rgba(37,211,102,0.4); z-index:999; transition:transform 0.2s}
+    .wa-float:hover{transform:scale(1.08)}
+    .wa-float svg{width:30px; height:30px; fill:currentColor}
+  </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F48JBZK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<header>
-<div class="logo">
-<div class="logo-check">
-<svg width="12" height="10" viewBox="0 0 12 10" fill="none">
-<path d="M1 5l3.5 3.5L11 1" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div> Resuelto </div>
-<a class="cta-header" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Presupuesto gratis </a> </header>
-<div class="strip">Presupuesto por escrito · Sin sorpresas</div>
-<section class="hero">
-<div class="hero-label">Servicios del hogar · Zona sur GBA</div>
-<div class="hero-tick-wrap">
-<div class="tick-circle">
-<svg class="tick-svg" viewBox="0 0 38 38">
-<path class="tick-path" d="M8 19l8 9L30 10"/>
-</svg>
-</div>
-</div>
-<h1>Tu casa<br/><em>resuelta</em></h1>
-<p class="hero-sub">Pintura, durlock, impermeabilización y arreglos rápidos en Avellaneda, Lanús y Lomas de Zamora.</p>
-<a class="btn-wa" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedí tu presupuesto gratis </a>
-</section>
-<div class="trust">
-<div class="trust-item"><span class="trust-dot"></span>Presupuesto por escrito</div>
-<div class="trust-item"><span class="trust-dot"></span>Precio justo de mercado</div>
-<div class="trust-item"><span class="trust-dot"></span>Trabajo garantizado</div>
-<div class="trust-item"><span class="trust-dot"></span>Sin costo de traslado</div>
-</div>
-<section class="section">
-<div class="eyebrow">Servicios</div>
-<div class="section-title">Todo lo que<br/>necesita tu casa</div>
-<div class="services-grid">
-<div class="svc">
-<div class="svc-icon">🖌️</div>
-<h3>Pintura interior</h3>
-<p>Paredes, cielorrasos y molduras. Látex, satinado o esmalte.</p>
-</div>
-<div class="svc">
-<div class="svc-icon">🏠</div>
-<h3>Pintura exterior</h3>
-<p>Frentes, medianeras y balcones. Materiales de primera.</p>
-</div>
-<div class="svc sec">
-<div class="svc-icon">💧</div>
-<h3>Impermeabilización</h3>
-<p>Terrazas y losas. Solución duradera contra filtraciones.</p>
-</div>
-<div class="svc sec">
-<div class="svc-icon">🔩</div>
-<h3>Durlock</h3>
-<p>Tabiques, cielorrasos y revestimientos en seco.</p>
-</div>
-<a class="svc" href="arreglos.html" style="text-decoration:none;color:inherit;display:block;">
-<div class="svc-icon">🔧</div>
-<h3>Arreglos rápidos</h3>
-<p>Colgamos TV, armamos muebles, cortinas, cerraduras. Primera hora incluida →</p>
-</a>
-<div class="svc sec">
-<div class="svc-icon">🔧</div>
-<h3>Y mucho más</h3>
-<p>Plomería, revoque, enduído. Consultanos por tu caso.</p>
-</div>
-</div>
-</section>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F48JZK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<!-- SECCIÓN TRABAJOS RECIENTES (CARRUSEL DESLIZABLE) -->
-<!-- SECCIÓN TRABAJOS RECIENTES (CARRUSEL DESLIZABLE) -->
-<!-- SECCIÓN TRABAJOS RECIENTES (CARRUSEL DESLIZABLE) -->
-<!-- SECCIÓN TRABAJOS RECIENTES (CARRUSEL DESLIZABLE) -->
-<section class="section" style="padding-top:20px; padding-bottom:20px;">
-  <div class="eyebrow">Nuestros trabajos</div>
-  <div class="section-title">Trabajos recientes</div>
-  <div style="display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20240608_174419307.jpg" alt="Trabajo 1" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250226_163124088.jpg" alt="Trabajo 2" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250227_182940714.jpg" alt="Trabajo 3" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/PasilloMb.png" alt="Pasillo MB" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/SalaOsde.png" alt="Sala Osde" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaPrevind.png" alt="Cocina Prevind" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
-    <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaDominica.png" alt="Cocina Dominica" style="width:160px; height:120px; flex-shrink:0; object-fit:cover; border-radius:8px; border:1px solid var(--light); scroll-snap-align:start;">
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">Resuelto <span>Zona Sur</span></a>
+    <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20pedir%20un%20presupuesto" class="btn-header" target="_blank" rel="noopener">Pedir Presupuesto</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span>Disponibilidad inmediata en Zona Sur</span>
+    </div>
+    <h1>Soluciones rápidas y garantizadas para tu <span>hogar</span></h1>
+    <p>Pintura, durlock, impermeabilización y arreglos generales en Avellaneda, Lanús y Lomas de Zamora. Trabajo profesional, sin sorpresas en el precio.</p>
+    <div class="hero-cta">
+      <a href="https://wa.me/5491136868661?text=Hola,%20necesito%20un%20presupuesto%20para%20un%20trabajo" class="btn-primary" target="_blank" rel="noopener">
+        💬 Consultar por WhatsApp
+      </a>
+      <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+    </div>
+  </section>
+
+  <!-- GARANTIAS -->
+  <section class="garantias">
+    <div class="garantias-inner">
+      <div class="garantia-item">
+        <div class="icon">⚡</div>
+        <h4>Respuesta en el día</h4>
+        <p>Te presupuestamos en pocas horas</p>
+      </div>
+      <div class="garantia-item">
+        <div class="icon">🛡️</div>
+        <h4>Trabajo Garantizado</h4>
+        <p>Si algo no queda bien, volvemos sin cargo</p>
+      </div>
+      <div class="garantia-item">
+        <div class="icon">💰</div>
+        <h4>Precio Cerrado</h4>
+        <p>El valor acordado es el que pagás, sin extras</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="section-title">
+      <h2>Servicios destacados</h2>
+      <p>Nos encargamos de todo para que no tengas que preocuparte</p>
+    </div>
+    <div class="grid-servicios">
+      
+      <!-- Pintura -->
+      <div class="card-servicio">
+        <div>
+          <div class="icon">🎨</div>
+          <h3>Pintura de Interiores y Exteriores</h3>
+          <p>Paredes, cielorrasos, fachadas y rejas. Trabajo prolijo con protección de muebles y pisos.</p>
+          <ul>
+            <li>Preparación y enduido de paredes</li>
+            <li>Pintura látex sintética y satinada</li>
+            <li>Tratamiento de humedad previa</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20presupuesto%20para%20pintura" class="btn-card" target="_blank" rel="noopener">Consultar Pintura →</a>
+      </div>
+
+      <!-- Durlock -->
+      <div class="card-servicio">
+        <div>
+          <div class="icon">🏗️</div>
+          <h3>Durlock y Steel Framing</h3>
+          <p>Tabiques divisorios, cielorrasos suspendidos, cajones decorativos y aislación termoacústica.</p>
+          <ul>
+            <li>División de ambientes</li>
+            <li>Cielorrasos junta tomada y desmontables</li>
+            <li>Reparación de placas dañadas</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20presupuesto%20para%20Durlock" class="btn-card" target="_blank" rel="noopener">Consultar Durlock →</a>
+      </div>
+
+      <!-- Impermeabilización -->
+      <div class="card-servicio">
+        <div>
+          <div class="icon">🌧️</div>
+          <h3>Impermeabilización de Techos</h3>
+          <p>Solución definitiva para filtraciones en losas, chapas y terrazas antes de que causen daños mayores.</p>
+          <ul>
+            <li>Membrana líquida con poliuretano</li>
+            <li>Membrana asfáltica con aluminio</li>
+            <li>Sellado de grietas y fisuras</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20presupuesto%20para%20impermeabilización" class="btn-card" target="_blank" rel="noopener">Consultar Impermeabilización →</a>
+      </div>
+
+      <!-- Arreglos Generales -->
+      <div class="card-servicio">
+        <div>
+          <div class="icon">🛠️</div>
+          <h3>Arreglos Generales del Hogar</h3>
+          <p>Mantenimiento integral y pequeñas reparaciones que van quedando pendientes en la casa.</p>
+          <ul>
+            <li>Colocación de griferías y sanitarios</li>
+            <li>Instalación de luminarias y soportes</li>
+            <li>Reparación de persianas y cerraduras</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20presupuesto%20para%20arreglos%20generales" class="btn-card" target="_blank" rel="noopener">Consultar Arreglos →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRABAJOS REALIZADOS (VARIAS IMÁGENES PARA PROBAR EL SLIDE) -->
+  <section class="trabajos-section">
+    <div class="trabajos-inner">
+      <div class="section-title">
+        <h2>Trabajos Recientes</h2>
+        <p>Deslizá para ver algunas de las obras y reparaciones finalizadas en la zona</p>
+      </div>
+      <div class="trabajo-galeria">
+        <div class="trabajo-card">
+          <img src="foto1.jpg" alt="Pintura integral de living" onerror="this.src='https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80'"/>
+          <div class="trabajo-card-info">
+            <h4>Pintura Interior</h4>
+            <p>Avellaneda Centro</p>
+          </div>
+        </div>
+
+        <div class="trabajo-card">
+          <img src="foto2.jpg" alt="Tabique de Durlock con puerta" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80'"/>
+          <div class="trabajo-card-info">
+            <h4>División en Durlock</h4>
+            <p>Lanús Oeste</p>
+          </div>
+        </div>
+
+        <div class="trabajo-card">
+          <img src="foto3.jpg" alt="Impermeabilización de terraza" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80'"/>
+          <div class="trabajo-card-info">
+            <h4>Membrana en Terraza</h4>
+            <p>Lomas de Zamora</p>
+          </div>
+        </div>
+
+        <!-- Imágenes adicionales para probar el deslizamiento / scroll -->
+        <div class="trabajo-card">
+          <img src="foto4.jpg" alt="Cielorraso suspendido" onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'"/>
+          <div class="trabajo-card-info">
+            <h4>Cielorraso Decorativo</h4>
+            <p>Banfield</p>
+          </div>
+        </div>
+
+        <div class="trabajo-card">
+          <img src="foto5.jpg" alt="Pintura de fachada" onerror="this.src='https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80'"/>
+          <div class="trabajo-card-info">
+            <h4>Pintura Exterior</h4>
+            <p>Wilde</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONAS DE COBERTURA -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Zonas de Cobertura</h2>
+      <p>Llegamos rápidamente a los siguientes partidos y localidades de Zona Sur</p>
+    </div>
+    <div class="zonas-list">
+      <div class="zona-chip">📍 Avellaneda Centro</div>
+      <div class="zona-chip">📍 Wilde</div>
+      <div class="zona-chip">📍 Sarandí</div>
+      <div class="zona-chip">📍 Gerli</div>
+      <div class="zona-chip">📍 Lanús Este / Oeste</div>
+      <div class="zona-chip">📍 Remedios de Escalada</div>
+      <div class="zona-chip">📍 Lomas de Zamora</div>
+      <div class="zona-chip">📍 Banfield</div>
+      <div class="zona-chip">📍 Temperley</div>
+    </div>
+  </section>
+
+  <!-- PASOS -->
+  <section class="section" style="padding-top:0">
+    <div class="section-title">
+      <h2>¿Cómo trabajamos?</h2>
+      <p>3 pasos simples para resolver lo que necesitas</p>
+    </div>
+    <div class="pasos-grid">
+      <div class="paso-card">
+        <div class="paso-num">1</div>
+        <h3>Escribinos por WhatsApp</h3>
+        <p>Nos contás qué trabajo necesitás realizar y, si podés, nos enviás una foto o video corto.</p>
+      </div>
+      <div class="paso-card">
+        <div class="paso-num">2</div>
+        <h3>Presupuesto Sin Cargo</h3>
+        <p>Te pasamos el presupuesto estimado o coordinamos una visita técnica en el día si hace falta.</p>
+      </div>
+      <div class="paso-card">
+        <div class="paso-num">3</div>
+        <h3>Trabajo Resuelto</h3>
+        <p>Acordamos el día, realizamos el trabajo de forma limpia y garantizada. ¡Listo!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section" style="padding-top:0">
+    <div class="section-title">
+      <h2>Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="testimonios-grid">
+      <div class="testimonio-card">
+        <div class="testimonio-stars">★★★★★</div>
+        <div class="testimonio-text">"Excelente trabajo de pintura en el departamento. Vinieron a horario, protegieron todos los muebles y dejaron todo impecable."</div>
+        <div class="testimonio-author">— Mariana G., Avellaneda</div>
+      </div>
+      <div class="testimonio-card">
+        <div class="testimonio-stars">★★★★★</div>
+        <div class="testimonio-text">"Tenía una filtración insoportable en el techo. Pusieron membrana y después de las lluvias fuertes de la semana pasada no cayó ni una gota."</div>
+        <div class="testimonio-author">— Carlos R., Lanús</div>
+      </div>
+      <div class="testimonio-card">
+        <div class="testimonio-stars">★★★★★</div>
+        <div class="testimonio-text">"Hicieron una división de Durlock en el local. Muy prolijos, rápidos y el precio fue exactamente lo que presupuestaron al principio."</div>
+        <div class="testimonio-author">— Esteban M., Lomas de Zamora</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="cta-banner">
+    <h2>¿Tenés un arreglo pendiente?</h2>
+    <p>Mandanos un mensaje ahora y recibí tu presupuesto sin compromiso.</p>
+    <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20pedir%20un%20presupuesto" class="btn-primary" target="_blank" rel="noopener">
+      💬 Pedir Presupuesto por WhatsApp
+    </a>
   </div>
-</section>
 
-<section class="how-section">
-<div class="how-inner">
-<div class="eyebrow">Cómo funciona</div>
-<div class="section-title">Tres pasos, nada más</div>
-<div class="steps">
-<div class="step">
-<div class="step-num">1</div>
-<div class="step-body">
-<strong>Nos escribís por WhatsApp</strong>
-<span>Contanos qué necesitás: tipo de trabajo, metros aproximados, zona. Sin formularios ni esperas.</span>
-</div>
-</div>
-<div class="step">
-<div class="step-num">2</div>
-<div class="step-body">
-<strong>Te damos el presupuesto por escrito</strong>
-<span>Coordinamos una visita sin cargo. El precio queda acordado antes de empezar. Sin sorpresas al final.</span>
-</div>
-</div>
-<div class="step">
-<div class="step-num">3</div>
-<div class="step-body">
-<strong>Resuelto ✓</strong>
-<span>Ejecutamos el trabajo, dejamos todo limpio y te mandamos fotos del resultado. Tu casa, resuelta.</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Resuelto · Servicios para el Hogar. Avellaneda, Lanús y Lomas de Zamora.</p>
+  </footer>
 
-<section class="section">
-<div class="eyebrow">Por qué elegirnos</div>
-<div class="section-title">Trabajo serio,<br/>sin vueltas</div>
-<div class="why-grid">
-<div class="why-card">
-<div class="icon">📋</div>
-<h3>Precio por escrito</h3>
-<p>El presupuesto lo recibís antes de arrancar. Ni un peso más al terminar.</p>
-</div>
-<div class="why-card">
-<div class="icon">🧹</div>
-<h3>Puntualidad y limpieza</h3>
-<p>Llegamos en la fecha acordada y dejamos todo ordenado al final del día.</p>
-</div>
-<div class="why-card">
-<div class="icon">🏅</div>
-<h3>Materiales de calidad</h3>
-<p>Usamos materiales de primera calidad. Nada que dure un año y haya que rehacer.</p>
-</div>
-<div class="why-card">
-<div class="icon">📍</div>
-<h3>Somos de la zona</h3>
-<p>Operamos en Avellaneda, Lanús y Lomas de Zamora. Sin costo de traslado.</p>
-</div>
-</div>
-</section>
-
-<section class="section" id="precios">
-<div class="eyebrow">Precios</div>
-<div class="section-title">Precios claros,<br/>sin sorpresas</div>
-<p style="color:var(--mid);font-size:.9rem;margin:-14px 0 24px;max-width:520px;">Valores de referencia de mano de obra. El presupuesto final lo recibís <strong style="color:var(--ink)">por escrito y sin cargo</strong> después de la visita.</p>
-<div class="price-card">
-<div class="price-row">
-<div class="price-name">🖌️ Pintura interior<small>2 manos de látex</small></div>
-<div class="price-val"><strong>desde $3.500</strong> <span>/ m²</span></div>
-</div>
-<div class="price-row">
-<div class="price-name">🏠 Pintura exterior / frentes</div>
-<div class="price-val"><strong>desde $6.500</strong> <span>/ m²</span></div>
-</div>
-<div class="price-row">
-<div class="price-name">🔩 Tabique de durlock<small>Colocación + masillado, listo para pintar</small></div>
-<div class="price-val"><strong>desde $10.000</strong> <span>/ m²</span></div>
-</div>
-<div class="price-row">
-<div class="price-name">🔩 Cielorraso de durlock</div>
-<div class="price-val"><strong>desde $12.000</strong> <span>/ m²</span></div>
-</div>
-<div class="price-row">
-<div class="price-name">💧 Impermeabilización de terraza<small>Membrana, mano de obra</small></div>
-<div class="price-val"><strong>desde $13.000</strong> <span>/ m²</span></div>
-</div>
-</div>
-<div class="price-example">💡 <strong>¿Cuánto cuesta pintar una habitación de 4x4?</strong><br/>Desde <strong>$130.000</strong> (mano de obra) — lista en un día.</div>
-<p class="price-note">Valores de referencia de mano de obra, para superficies en buen estado. Trabajos con preparación previa (masillado profundo, humedad, alturas) se cotizan en la visita. Podemos trabajar con materiales incluidos o solo mano de obra.<br/>Última actualización: agosto 2026.</p>
-<div class="price-cta">
-<a class="btn-wa" href="https://wa.me/5491173569165?text=Hola%2C%20vi%20los%20precios%20en%20la%20p%C3%A1gina%20y%20quiero%20un%20presupuesto%20para%20mi%20casa.">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedí tu presupuesto exacto </a>
-<p class="sub">Respuesta rápida · Visita y presupuesto sin cargo</p>
-</div>
-</section>
-
-<section class="faq-section">
-<div class="eyebrow">Preguntas frecuentes</div>
-<div class="section-title">Lo que nos suelen<br/>preguntar</div>
-<div class="faq-item open">
-<div class="faq-q">¿Los materiales están incluidos en el presupuesto? <span class="arr">▼</span></div>
-<div class="faq-a">Podemos trabajar de las dos formas: con materiales incluidos o solo mano de obra si ya tenés los materiales. Lo aclaramos en el presupuesto para que no haya confusiones.</div>
-</div>
-<div class="faq-item">
-<div class="faq-q">¿Cuánto tarda en pintarse una habitación? <span class="arr">▼</span></div>
-<div class="faq-a">Una habitación estándar con dos manos de látex generalmente se termina en un día. Si hay preparación de superficie puede llevar un día más. Te damos el cronograma exacto en el presupuesto.</div>
-</div>
-<div class="faq-item">
-<div class="faq-q">¿Hay que estar en casa mientras trabajan? <span class="arr">▼</span></div>
-<div class="faq-a">No es obligatorio. Coordinamos el acceso y podemos trabajar de forma autónoma. Al terminar el día te mandamos fotos del avance por WhatsApp.</div>
-</div>
-<div class="faq-item">
-<div class="faq-q">¿Cómo pido el presupuesto? <span class="arr">▼</span></div>
-<div class="faq-a">Escribinos por WhatsApp contándonos qué necesitás. Coordinamos una visita sin cargo y te damos el precio por escrito antes de empezar.</div>
-</div>
-<div class="faq-item">
-<div class="faq-q">¿Hacen trabajos chicos o solo obras grandes? <span class="arr">▼</span></div>
-<div class="faq-a">Hacemos de todo: desde pintar una sola habitación o colgar un TV hasta refacciones completas. Consultanos sin compromiso.</div>
-</div>
-</section>
-
-<div class="zona-section">
-<div class="zona-inner">
-<div class="eyebrow">Zona de cobertura</div>
-<div class="section-title" style="margin-bottom:10px">Dónde llegamos</div>
-<p>Avellaneda, Lanús y Lomas de Zamora — sin costo de traslado.</p>
-<div class="zona-tags">
-<span>Avellaneda</span><span>Lanús</span><span>Lomas de Zamora</span>
-<span>Banfield</span><span>Temperley</span><span>Sarandí</span>
-<span>Gerli</span><span>Wilde</span><span>Valentín Alsina</span>
-<span>Lanús Oeste</span><span>Remedios de Escalada</span><span>Dock Sud</span>
-</div>
-</div>
-</div>
-
-<section class="cta-section">
-<h2>¿Qué necesita<br/><em>tu casa</em> hoy?</h2>
-<p>Escribinos y te respondemos con un presupuesto sin cargo.</p>
-<a class="btn-wa" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Escribinos por WhatsApp </a>
-</section>
-
-<footer>© 2026 · Resuelto · Servicios del hogar · Avellaneda, Lanús y Lomas de Zamora</footer>
-
-<a class="wa-float" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F" aria-label="WhatsApp">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
-
-<script>
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
-});
-</script>
+  <!-- BOTON FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/5491136868661?text=Hola,%20quisiera%20consultar%20por%20un%20servicio" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 2a13.9 13.9 0 0 0-12 21l-1.9 6.8 7-1.8A13.9 13.9 0 1 0 16 2zm6.9 19.5c-.3.8-1.7 1.5-2.4 1.6-.6.1-1.4.2-4.4-1-3.8-1.5-6.3-5.4-6.5-5.6-.2-.3-1.6-2.1-1.6-4 0-1.9 1-2.9 1.4-3.3.3-.3.8-.5 1.1-.5.3 0 .6 0 .9.1.3.1.7-.1 1 .7.4 1 .9 2.5 1 2.7.1.2.1.4 0 .6s-.2.4-.4.6c-.2.2-.4.4-.6.6-.2.2-.4.4-.2.8.5.9 1.6 2.1 3 2.9 1.4.8 2.5 1.1 2.9 1.2.4.1.7 0 .9-.2.3-.3.8-1 1.1-1.3.3-.4.6-.3 1-.2s2.3 1.1 2.7 1.3c.4.2.7.3.8.5.1.3.1 1.6-.2 2.4z"/>
+    </svg>
+  </a>
 </body>
 </html>
