@@ -1,1059 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5F48JBZK');</script>
-<!-- End Google Tag Manager -->
-
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>Resuelto · Servicios del hogar en Avellaneda, Lanús y Lomas de Zamora</title>
-
-<meta name="description" content="Pintura, durlock, impermeabilización y arreglos rápidos en Avellaneda, Lanús y Lomas de Zamora. Un solo número para todo lo que necesita tu casa. Presupuesto sin cargo."/>
-
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-
-<style>
-*,*::before,*::after{
-  box-sizing:border-box;
-  margin:0;
-  padding:0
-}
-
-:root{
-  --dark:#1E1E1A;
-  --dark2:#141412;
-  --accent:#4A6741;
-  --accent2:#6A8F61;
-  --bg:#F7F6F2;
-  --card:#FDFCF9;
-  --ink:#1C1C18;
-  --mid:#6B6860;
-  --light:#E4E1DA;
-  --white:#FDFCF9;
-  --tint:#EEF2EB;
-  --wa:#25D366;
-}
-
-html{
-  scroll-behavior:smooth
-}
-
-body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family:'Inter',sans-serif;
-  font-size:16px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-
-/* ── HEADER ── */
-header{
-  background:var(--card);
-  border-bottom:1px solid var(--light);
-  padding:14px 24px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-
-.logo{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:1.35rem;
-  color:var(--ink);
-  letter-spacing:-.01em;
-  display:flex;
-  align-items:center;
-  gap:9px;
-}
-
-.logo-check{
-  width:22px;
-  height:22px;
-  border-radius:50%;
-  background:var(--accent);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
-}
-
-.cta-header{
-  background:var(--wa);
-  color:#fff;
-  font-size:.8rem;
-  font-weight:700;
-  padding:8px 16px;
-  border-radius:6px;
-  text-decoration:none;
-  white-space:nowrap;
-  display:flex;
-  align-items:center;
-  gap:6px;
-}
-
-/* ── STRIP ── */
-.strip{
-  background:var(--accent);
-  text-align:center;
-  padding:8px 16px;
-  font-size:.75rem;
-  font-weight:600;
-  color:#fff;
-  letter-spacing:.05em;
-  text-transform:uppercase;
-}
-
-/* ── HERO ── */
-.hero{
-  background:var(--card);
-  border-bottom:1px solid var(--light);
-  padding:60px 24px 56px;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}
-
-.hero::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:repeating-linear-gradient(
-    -55deg,
-    transparent,
-    transparent 32px,
-    rgba(30,30,26,.022) 32px,
-    rgba(30,30,26,.022) 33px
-  );
-  pointer-events:none;
-}
-
-.hero-label{
-  display:inline-block;
-  font-size:.72rem;
-  font-weight:600;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--mid);
-  margin-bottom:20px;
-}
-
-.hero-tick-wrap{
-  margin:0 auto 24px;
-  width:72px;
-  height:72px
-}
-
-.tick-circle{
-  width:72px;
-  height:72px;
-  border-radius:50%;
-  background:var(--accent);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 6px 24px rgba(74,103,65,.25);
-}
-
-.tick-svg{
-  width:38px;
-  height:38px
-}
-
-.tick-path{
-  stroke:#fff;
-  stroke-width:5;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-  fill:none;
-  stroke-dasharray:60;
-  stroke-dashoffset:60;
-  animation:drawTick .6s cubic-bezier(.4,0,.2,1) .3s forwards;
-}
-
-@keyframes drawTick{
-  to{ stroke-dashoffset:0 }
-}
-
-.hero h1{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:clamp(2.6rem,11vw,4.4rem);
-  color:var(--ink);
-  line-height:1.0;
-  letter-spacing:-.02em;
-  max-width:560px;
-  margin:0 auto 16px;
-}
-
-.hero h1 em{
-  font-style:normal;
-  color:var(--accent)
-}
-
-.hero-sub{
-  color:var(--mid);
-  font-size:.95rem;
-  max-width:360px;
-  margin:0 auto 32px;
-  line-height:1.6;
-}
-
-.btn-wa{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  background:var(--wa);
-  color:#fff;
-  font-size:1rem;
-  font-weight:700;
-  padding:16px 28px;
-  border-radius:8px;
-  text-decoration:none;
-  box-shadow:0 4px 24px rgba(37,211,102,.3);
-  transition:transform .15s,box-shadow .15s;
-}
-
-.btn-wa:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 32px rgba(37,211,102,.45)
-}
-
-/* ── TRUST ── */
-.trust{
-  background:var(--card);
-  border-bottom:1px solid var(--light);
-  padding:14px 24px;
-  display:flex;
-  justify-content:center;
-  gap:24px;
-  flex-wrap:wrap;
-}
-
-.trust-item{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:.76rem;
-  font-weight:600;
-  color:var(--mid);
-}
-
-.trust-dot{
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:var(--accent);
-  flex-shrink:0;
-}
-
-/* ── SHARED SECTION ── */
-.section{
-  padding:56px 24px;
-  max-width:660px;
-  margin:0 auto
-}
-
-.eyebrow{
-  font-size:.68rem;
-  font-weight:600;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:6px;
-}
-
-.section-title{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:clamp(1.7rem,5.5vw,2.4rem);
-  line-height:1.05;
-  letter-spacing:-.02em;
-  margin-bottom:28px;
-}
-
-/* ── SERVICIOS ── */
-.services-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px
-}
-
-.svc{
-  background:var(--card);
-  border:1px solid var(--light);
-  border-radius:10px;
-  padding:18px 16px;
-  border-top:3px solid var(--accent);
-  transition:box-shadow .15s;
-}
-
-.svc:hover{
-  box-shadow:0 4px 16px rgba(0,0,0,.07)
-}
-
-.svc.sec{
-  border-top-color:var(--accent2)
-}
-
-.svc-icon{
-  font-size:1.5rem;
-  margin-bottom:8px
-}
-
-.svc h3{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;
-  font-size:1rem;
-  letter-spacing:-.01em;
-  margin-bottom:3px;
-}
-
-.svc p{
-  font-size:.8rem;
-  color:var(--mid);
-  line-height:1.45
-}
-
-/* ── HOW ── */
-.how-section{
-  background:var(--tint);
-  border-top:1px solid var(--light);
-  border-bottom:1px solid var(--light);
-  padding:56px 24px
-}
-
-.how-inner{
-  max-width:660px;
-  margin:0 auto
-}
-
-.how-section .eyebrow{ color:var(--accent) }
-.how-section .section-title{ color:var(--ink); margin-bottom:32px }
-
-.steps{ display:flex; flex-direction:column }
-.step{
-  display:flex;
-  gap:16px;
-  padding:20px 0;
-  border-bottom:1px solid rgba(30,30,26,.09);
-}
-.step:last-child{ border-bottom:none }
-
-.step-num{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:2.2rem;
-  color:var(--accent);
-  line-height:1;
-  flex-shrink:0;
-  width:40px;
-  padding-top:2px;
-}
-
-.step-body strong{
-  display:block;
-  color:var(--ink);
-  font-size:.95rem;
-  font-weight:600;
-  margin-bottom:3px;
-}
-
-.step-body span{
-  color:var(--mid);
-  font-size:.85rem;
-  line-height:1.5
-}
-
-/* ── WHY ── */
-.why-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px
-}
-
-.why-card{
-  background:var(--card);
-  border:1px solid var(--light);
-  border-radius:10px;
-  padding:18px 16px;
-}
-
-.why-card .icon{ font-size:1.4rem; margin-bottom:8px }
-.why-card h3{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:700;
-  font-size:.95rem;
-  letter-spacing:-.01em;
-  margin-bottom:4px;
-}
-.why-card p{ font-size:.8rem; color:var(--mid); line-height:1.45 }
-
-<!-- ══════════════════════════════════════════════ -->
-<!-- TRABAJOS REALIZADOS -->
-<!-- ══════════════════════════════════════════════ -->
-<section class="trabajos-section">
-  <div class="trabajos-inner">
-    <div class="eyebrow">Trabajos realizados</div>
-    <div class="section-title">Así trabajamos,<br/>así queda.</div>
-    <p class="trabajos-sub">Algunos de los trabajos que realizamos y transformaciones que logramos.</p>
-
-    <div class="trabajos-carrusel">
-      <button class="trabajos-btn trabajos-anterior" aria-label="Trabajo anterior">&#10094;</button>
-
-      <div class="trabajos-track">
-        
-        <!-- COCINA DOMINICA -->
-        <div class="trabajo-card">
-          <span class="trabajo-tag">ANTES</span>
-          <img src="cocinadomantes.jpg" alt="Cocina antes" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Refacción de cocina</strong>
-            <span>Estado inicial</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <span class="trabajo-tag">DESPUÉS</span>
-          <img src="cocinadomdespues.jpg" alt="Cocina después" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Refacción de cocina</strong>
-            <span>Resultado final</span>
-          </div>
-        </div>
-
-        <!-- COCINA PREVIND -->
-        <div class="trabajo-card">
-          <span class="trabajo-tag">ANTES</span>
-          <img src="cocinapreantes.jpg" alt="Renovación de cocina antes" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Renovación de cocina</strong>
-            <span>Estado inicial</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <span class="trabajo-tag">DESPUÉS</span>
-          <img src="cocinapredespues.jpg" alt="Renovación de cocina después" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Renovación de cocina</strong>
-            <span>Resultado final</span>
-          </div>
-        </div>
-
-        <!-- PASILLO -->
-        <div class="trabajo-card">
-          <span class="trabajo-tag">ANTES</span>
-          <img src="pasilloantes.jpg" alt="Pasillo antes" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Pintura de pasillo</strong>
-            <span>Estado inicial</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <span class="trabajo-tag">DESPUÉS</span>
-          <img src="pasillodespues.jpg" alt="Pasillo después" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Pintura de pasillo</strong>
-            <span>Resultado final</span>
-          </div>
-        </div>
-
-        <!-- OTRAS FOTOS -->
-        <div class="trabajo-card">
-          <img src="IMG_20250226_163124088.jpg" alt="Trabajo realizado" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Renovación de espacio</strong>
-            <span>Terminaciones</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <img src="IMG_20250227_182940714.jpg" alt="Trabajo realizado" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Puesta en valor</strong>
-            <span>Detalles</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <img src="IMG_20240608_174419307.jpg" alt="Trabajo realizado" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Trabajo realizado</strong>
-            <span>GBA Sur</span>
-          </div>
-        </div>
-
-      </div>
-
-      <button class="trabajos-btn trabajos-siguiente" aria-label="Siguiente trabajo">&#10095;</button>
-    </div>
-
-    <div class="trabajos-indicador">Deslizá para ver los trabajos →</div>
-  </div>
-</section>
-}
-
-/* ── PRECIOS ── */
-.price-card{
-  background:var(--card);
-  border:1px solid var(--light);
-  border-radius:12px;
-  overflow:hidden;
-}
-
-.price-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  padding:15px 18px;
-  border-bottom:1px solid var(--light);
-}
-
-.price-row:last-child{ border-bottom:none }
-.price-row:nth-child(even){ background:var(--bg) }
-.price-name{ font-size:.88rem; font-weight:500 }
-.price-name small{ display:block; color:var(--mid); font-size:.74rem; font-weight:400; margin-top:1px }
-.price-val{ white-space:nowrap; font-size:.88rem; text-align:right }
-.price-val strong{ font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:.95rem }
-.price-val span{ color:var(--mid); font-size:.74rem }
-
-.price-example{
-  margin-top:16px;
-  padding:16px 18px;
-  background:var(--card);
-  border:1px solid var(--light);
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-  font-size:.88rem;
-  line-height:1.55;
-}
-
-.price-example strong{ font-weight:600 }
-.price-note{ color:var(--mid); font-size:.74rem; line-height:1.6; margin-top:16px }
-.price-cta{ margin-top:28px; text-align:center }
-.price-cta .sub{ color:var(--mid); font-size:.76rem; margin-top:10px }
-
-/* ── FAQ ── */
-.faq-section{
-  padding:56px 24px;
-  max-width:660px;
-  margin:0 auto
-}
-
-.faq-item{ border-bottom:1px solid var(--light); padding:15px 0 }
-.faq-item:last-child{ border-bottom:none }
-
-.faq-q{
-  font-weight:600;
-  font-size:.92rem;
-  cursor:pointer;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:8px;
-}
-
-.faq-q .arr{
-  color:var(--accent);
-  font-size:1rem;
-  transition:transform .2s;
-  flex-shrink:0
-}
-
-.faq-a{
-  font-size:.84rem;
-  color:var(--mid);
-  line-height:1.6;
-  display:none;
-  padding-top:8px
-}
-
-.faq-item.open .faq-a{ display:block }
-.faq-item.open .arr{ transform:rotate(180deg) }
-
-/* ── ZONA ── */
-.zona-section{
-  background:var(--card);
-  border-top:1px solid var(--light);
-  border-bottom:1px solid var(--light);
-  padding:44px 24px;
-  text-align:center;
-}
-
-.zona-inner{ max-width:660px; margin:0 auto }
-.zona-inner p{ color:var(--mid); margin-bottom:18px; font-size:.9rem }
-
-.zona-tags{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center }
-.zona-tags span{
-  background:var(--bg);
-  border:1px solid var(--light);
-  border-radius:20px;
-  padding:5px 14px;
-  font-size:.78rem;
-  font-weight:500;
-}
-
-/* ── CTA FINAL ── */
-.cta-section{
-  background:var(--tint);
-  border-bottom:1px solid var(--light);
-  padding:64px 24px;
-  text-align:center
-}
-
-.cta-section h2{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-weight:800;
-  font-size:clamp(1.9rem,7vw,2.8rem);
-  color:var(--ink);
-  line-height:1.05;
-  letter-spacing:-.02em;
-  max-width:480px;
-  margin:0 auto 10px;
-}
-
-.cta-section h2 em{ font-style:normal; color:var(--accent) }
-.cta-section p{ color:var(--mid); margin-bottom:28px; font-size:.9rem }
-
-/* ── FOOTER ── */
-footer{
-  background:var(--bg);
-  text-align:center;
-  padding:20px 24px;
-  font-size:.72rem;
-  color:var(--mid);
-}
-
-/* ── WHATSAPP FLOAT ── */
-.wa-float{
-  position:fixed;
-  bottom:22px;
-  right:22px;
-  z-index:999;
-  background:var(--wa);
-  width:56px;
-  height:56px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 4px 18px rgba(0,0,0,.28);
-  text-decoration:none;
-  transition:transform .15s;
-}
-
-.wa-float:hover{ transform:scale(1.08) }
-
-/* ── MOBILE ── */
-@media(max-width:600px){
-  .trabajos-section{ padding:48px 24px; }
-  .trabajo-card{ flex:0 0 78vw; height:230px; }
-  .trabajos-btn{ display:none; }
-}
-
-@media(max-width:420px){
-  .services-grid, .why-grid{ grid-template-columns:1fr }
-  .trust{ gap:12px }
-}
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resuelto | Soluciones para el Hogar</title>
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F8F8F6;
+      --card: #FFFFFF;
+      --text: #1A1A18;
+      --mid: #666660;
+      --light: #E8E8E2;
+      --accent: #2B4C3F;
+      --accent-light: #EBF1EE;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .eyebrow, strong {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--light);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 660px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 48px 24px;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: var(--mid);
+      margin-bottom: 24px;
+    }
+
+    /* ── TRABAJOS REALIZADOS (CARRUSEL CORREGIDO) ── */
+    .trabajos-section {
+      background: var(--card);
+      border-top: 1px solid var(--light);
+      border-bottom: 1px solid var(--light);
+      padding: 56px 24px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .trabajos-inner {
+      max-width: 660px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .trabajos-sub {
+      color: var(--mid);
+      font-size: .88rem;
+      line-height: 1.55;
+      margin-bottom: 26px;
+      max-width: 500px;
+    }
+
+    .trabajos-carrusel {
+      position: relative;
+      width: 100%;
+    }
+
+    .trabajos-track {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      padding: 4px 2px 12px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .trabajos-track::-webkit-scrollbar { 
+      display: none; 
+    }
+
+    /* Ajuste estricto del tamaño de la tarjeta */
+    .trabajo-card {
+      position: relative;
+      flex: 0 0 270px !important;
+      width: 270px !important;
+      height: 205px !important;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--light);
+      background: var(--bg);
+      scroll-snap-align: start;
+      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+    }
+
+    /* Ajuste estricto de la imagen */
+    .trabajo-card img {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
+      transition: transform .3s ease;
+    }
+
+    .trabajo-card:hover img { 
+      transform: scale(1.03); 
+    }
+
+    .trabajo-info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 34px 14px 13px;
+      background: linear-gradient(transparent, rgba(0,0,0,.82));
+      color: #fff;
+      z-index: 3;
+    }
+
+    .trabajo-info strong {
+      display: block;
+      font-size: .85rem;
+    }
+
+    .trabajo-info span {
+      display: block;
+      font-size: .7rem;
+      opacity: .9;
+      margin-top: 2px;
+    }
+
+    .trabajo-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 4;
+      background: rgba(30,30,26,.85);
+      color: #fff;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .trabajos-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--light);
+      border-radius: 50%;
+      background: var(--card);
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      z-index: 5;
+      box-shadow: 0 3px 12px rgba(0,0,0,.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trabajos-anterior { left: -18px; }
+    .trabajos-siguiente { right: -18px; }
+
+    .trabajos-indicador {
+      text-align: center;
+      color: var(--mid);
+      font-size: .72rem;
+      margin-top: 8px;
+    }
+
+    /* Responsive Celulares */
+    @media (max-width: 600px) {
+      .trabajo-card { 
+        flex: 0 0 78vw !important; 
+        width: 78vw !important; 
+        height: 230px !important; 
+      }
+      .trabajos-btn { 
+        display: none; 
+      }
+    }
+
+    /* ── FOOTER / CONTACTO ── */
+    footer {
+      padding: 48px 24px;
+      max-width: 660px;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--mid);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F48JBZK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">Resuelto.</a>
+    </div>
+  </header>
 
-<header>
-  <div class="logo">
-    <div class="logo-check">
-      <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
-        <path d="M1 5l3.5 3.5L11 1" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    Resuelto
-  </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="eyebrow">Soluciones para el hogar</div>
+    <h1 class="hero-title">Resolvemos los arreglos de tu casa sin vueltas.</h1>
+    <p class="hero-sub">Mantenimiento, pintura, albañilería y pequeñas reformas con profesionalismo y cumplimiento.</p>
+  </section>
 
-  <a class="cta-header" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    Presupuesto gratis
-  </a>
-</header>
+  <!-- TRABAJOS REALIZADOS -->
+  <section class="trabajos-section">
+    <div class="trabajos-inner">
+      <div class="eyebrow">Trabajos realizados</div>
+      <h2 class="section-title">Así trabajamos,<br/>así queda.</h2>
+      <p class="trabajos-sub">Algunos de los trabajos que realizamos y transformaciones que logramos.</p>
 
-<div class="strip">
-  Presupuesto por escrito · Sin sorpresas
-</div>
+      <div class="trabajos-carrusel">
+        <button class="trabajos-btn trabajos-anterior" id="btnAnterior" aria-label="Trabajo anterior">&#10094;</button>
 
-<section class="hero">
-  <div class="hero-label">Servicios del hogar · Zona sur GBA</div>
-  <div class="hero-tick-wrap">
-    <div class="tick-circle">
-      <svg class="tick-svg" viewBox="0 0 38 38">
-        <path class="tick-path" d="M8 19l8 9L30 10"/>
-      </svg>
-    </div>
-  </div>
-  <h1>Tu casa<br/><em>resuelta</em></h1>
-  <p class="hero-sub">Pintura, durlock, impermeabilización y arreglos rápidos en Avellaneda, Lanús y Lomas de Zamora.</p>
-  <a class="btn-wa" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    Pedí tu presupuesto gratis
-  </a>
-</section>
-
-<div class="trust">
-  <div class="trust-item"><span class="trust-dot"></span>Presupuesto por escrito</div>
-  <div class="trust-item"><span class="trust-dot"></span>Precio justo de mercado</div>
-  <div class="trust-item"><span class="trust-dot"></span>Trabajo garantizado</div>
-  <div class="trust-item"><span class="trust-dot"></span>Sin costo de traslado</div>
-</div>
-
-<section class="section">
-  <div class="eyebrow">Servicios</div>
-  <div class="section-title">Todo lo que<br/>necesita tu casa</div>
-  <div class="services-grid">
-    <div class="svc">
-      <div class="svc-icon">🖌️</div>
-      <h3>Pintura interior</h3>
-      <p>Paredes, cielorrasos y molduras. Látex, satinado o esmalte.</p>
-    </div>
-    <div class="svc">
-      <div class="svc-icon">🏠</div>
-      <h3>Pintura exterior</h3>
-      <p>Frentes, medianeras y balcones. Materiales de primera.</p>
-    </div>
-    <div class="svc sec">
-      <div class="svc-icon">💧</div>
-      <h3>Impermeabilización</h3>
-      <p>Terrazas y losas. Solución duradera contra filtraciones.</p>
-    </div>
-    <div class="svc sec">
-      <div class="svc-icon">🔩</div>
-      <h3>Durlock</h3>
-      <p>Tabiques, cielorrasos y revestimientos en seco.</p>
-    </div>
-    <a class="svc" href="arreglos.html" style="text-decoration:none;color:inherit;display:block;">
-      <div class="svc-icon">🔧</div>
-      <h3>Arreglos rápidos</h3>
-      <p>Colgamos TV, armamos muebles, cortinas, cerraduras. Primera hora incluida →</p>
-    </a>
-    <div class="svc sec">
-      <div class="svc-icon">🔧</div>
-      <h3>Y mucho más</h3>
-      <p>Plomería, revoque, enduído. Consultanos por tu caso.</p>
-    </div>
-  </div>
-</section>
-
-<section class="how-section">
-  <div class="how-inner">
-    <div class="eyebrow">Cómo funciona</div>
-    <div class="section-title">Tres pasos, nada más</div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <strong>Nos escribís por WhatsApp</strong>
-          <span>Contanos qué necesitás: tipo de trabajo, metros aproximados, zona. Sin formularios ni esperas.</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <strong>Te damos el presupuesto por escrito</strong>
-          <span>Coordinamos una visita sin cargo. El precio queda acordado antes de empezar. Sin sorpresas al final.</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <strong>Resuelto ✓</strong>
-          <span>Ejecutamos el trabajo, dejamos todo limpio y te mandamos fotos del resultado. Tu casa, resuelta.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="eyebrow">Por qué elegirnos</div>
-  <div class="section-title">Trabajo serio,<br/>sin vueltas</div>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="icon">📋</div>
-      <h3>Precio por escrito</h3>
-      <p>El presupuesto lo recibís antes de arrancar. Ni un peso más al terminar.</p>
-    </div>
-    <div class="why-card">
-      <div class="icon">🧹</div>
-      <h3>Puntualidad y limpieza</h3>
-      <p>Llegamos en la fecha acordada y dejamos todo ordenado al final del día.</p>
-    </div>
-    <div class="why-card">
-      <div class="icon">🏅</div>
-      <h3>Materiales de calidad</h3>
-      <p>Usamos materiales de primera calidad. Nada que dure un año y haya que rehacer.</p>
-    </div>
-    <div class="why-card">
-      <div class="icon">📍</div>
-      <h3>Somos de la zona</h3>
-      <p>Operamos en Avellaneda, Lanús y Lomas de Zamora. Sin costo de traslado.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════ -->
-<!-- TRABAJOS REALIZADOS -->
-<!-- ══════════════════════════════════════════════ -->
-<section class="trabajos-section">
-  <div class="trabajos-inner">
-    <div class="eyebrow">Trabajos realizados</div>
-    <div class="section-title">Así trabajamos,<br/>así queda.</div>
-    <p class="trabajos-sub">Algunos de los trabajos que realizamos y transformaciones que logramos.</p>
-
-    <div class="trabajos-carrusel">
-      <button class="trabajos-btn trabajos-anterior" aria-label="Trabajo anterior">&#10094;</button>
-
-      <div class="trabajos-track">
-        <!-- COCINA DOMINICA -->
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaDominica.png" alt="Refacción de cocina" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Refacción de cocina</strong>
-            <span>Antes y después</span>
+        <div class="trabajos-track" id="trabajosTrack">
+          
+          <!-- COCINA DOMINICA -->
+          <div class="trabajo-card">
+            <span class="trabajo-tag">ANTES</span>
+            <img src="cocinadomantes.jpg" alt="Cocina antes" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Refacción de cocina</strong>
+              <span>Estado inicial</span>
+            </div>
           </div>
+
+          <div class="trabajo-card">
+            <span class="trabajo-tag">DESPUÉS</span>
+            <img src="cocinadomdespues.jpg" alt="Cocina después" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Refacción de cocina</strong>
+              <span>Resultado final</span>
+            </div>
+          </div>
+
+          <!-- COCINA PREVIND -->
+          <div class="trabajo-card">
+            <span class="trabajo-tag">ANTES</span>
+            <img src="cocinapreantes.jpg" alt="Renovación de cocina antes" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Renovación de cocina</strong>
+              <span>Estado inicial</span>
+            </div>
+          </div>
+
+          <div class="trabajo-card">
+            <span class="trabajo-tag">DESPUÉS</span>
+            <img src="cocinapredespues.jpg" alt="Renovación de cocina después" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Renovación de cocina</strong>
+              <span>Resultado final</span>
+            </div>
+          </div>
+
+          <!-- PASILLO -->
+          <div class="trabajo-card">
+            <span class="trabajo-tag">ANTES</span>
+            <img src="pasilloantes.jpg" alt="Pasillo antes" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Pintura de pasillo</strong>
+              <span>Estado inicial</span>
+            </div>
+          </div>
+
+          <div class="trabajo-card">
+            <span class="trabajo-tag">DESPUÉS</span>
+            <img src="pasillodespues.jpg" alt="Pasillo después" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Pintura de pasillo</strong>
+              <span>Resultado final</span>
+            </div>
+          </div>
+
+          <!-- FOTOS ADICIONALES (Con extensión .JPG exacta) -->
+          <div class="trabajo-card">
+            <img src="IMG_20250226_163124088.JPG" alt="Trabajo realizado" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Renovación de espacio</strong>
+              <span>Terminaciones</span>
+            </div>
+          </div>
+
+          <div class="trabajo-card">
+            <img src="IMG_20250227_182940714.JPG" alt="Trabajo realizado" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Puesta en valor</strong>
+              <span>Detalles</span>
+            </div>
+          </div>
+
+          <div class="trabajo-card">
+            <img src="IMG_20240608_174419307.JPG" alt="Trabajo realizado" loading="lazy" />
+            <div class="trabajo-info">
+              <strong>Trabajo realizado</strong>
+              <span>GBA Sur</span>
+            </div>
+          </div>
+
         </div>
 
-        <!-- COCINA PREVIND -->
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/CocinaPrevind.png" alt="Renovación de cocina" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Renovación de cocina</strong>
-            <span>Antes y después</span>
-          </div>
-        </div>
-
-        <!-- PASILLO -->
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/PasilloMb.png" alt="Pintura de pasillo" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Pintura de pasillo</strong>
-            <span>Antes y después</span>
-          </div>
-        </div>
-
-        <!-- SALA OSDE -->
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/SalaOsde.png" alt="Renovación de sala" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Renovación de espacio</strong>
-            <span>Antes y después</span>
-          </div>
-        </div>
-
-        <!-- FOTOS JPG -->
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250226_163124088.jpg" alt="Trabajo realizado" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Trabajo realizado</strong>
-            <span>Renovación de espacio</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250227_182940714.jpg" alt="Trabajo realizado" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Trabajo realizado</strong>
-            <span>Terminaciones y detalles</span>
-          </div>
-        </div>
-
-        <div class="trabajo-card">
-          <img src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20240608_174419307.jpg" alt="Trabajo realizado" loading="lazy" />
-          <div class="trabajo-info">
-            <strong>Trabajo realizado</strong>
-            <span>Puesta en valor</span>
-          </div>
-        </div>
+        <button class="trabajos-btn trabajos-siguiente" id="btnSiguiente" aria-label="Siguiente trabajo">&#10095;</button>
       </div>
 
-      <button class="trabajos-btn trabajos-siguiente" aria-label="Siguiente trabajo">&#10095;</button>
+      <div class="trabajos-indicador">Deslizá para ver los trabajos →</div>
     </div>
+  </section>
 
-    <div class="trabajos-indicador">Deslizá para ver los trabajos →</div>
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; Resuelto. Todos los derechos reservados.</p>
+  </footer>
 
-<section class="section" id="precios">
-  <div class="eyebrow">Precios</div>
-  <div class="section-title">Precios claros,<br/>sin sorpresas</div>
-  <p style="color:var(--mid);font-size:.9rem;margin:-14px 0 24px;max-width:520px;">
-    Valores de referencia de mano de obra. El presupuesto final lo recibís <strong style="color:var(--ink)">por escrito y sin cargo</strong> después de la visita.
-  </p>
+  <!-- SCRIPT CARRUSEL -->
+  <script>
+    const track = document.getElementById('trabajosTrack');
+    const btnAnterior = document.getElementById('btnAnterior');
+    const btnSiguiente = document.getElementById('btnSiguiente');
 
-  <div class="price-card">
-    <div class="price-row">
-      <div class="price-name">🖌️ Pintura interior <small>2 manos de látex</small></div>
-      <div class="price-val"><strong>desde $3.500</strong> <span>/ m²</span></div>
-    </div>
-    <div class="price-row">
-      <div class="price-name">🏠 Pintura exterior / frentes</div>
-      <div class="price-val"><strong>desde $6.500</strong> <span>/ m²</span></div>
-    </div>
-    <div class="price-row">
-      <div class="price-name">🔩 Tabique de durlock <small>Colocación + masillado, listo para pintar</small></div>
-      <div class="price-val"><strong>desde $10.000</strong> <span>/ m²</span></div>
-    </div>
-    <div class="price-row">
-      <div class="price-name">🔩 Cielorraso de durlock</div>
-      <div class="price-val"><strong>desde $12.000</strong> <span>/ m²</span></div>
-    </div>
-    <div class="price-row">
-      <div class="price-name">💧 Impermeabilización de terraza <small>Membrana, mano de obra</small></div>
-      <div class="price-val"><strong>desde $13.000</strong> <span>/ m²</span></div>
-    </div>
-  </div>
+    if (track && btnAnterior && btnSiguiente) {
+      btnAnterior.addEventListener('click', () => {
+        track.scrollBy({ left: -280, behavior: 'smooth' });
+      });
 
-  <div class="price-example">
-    💡 <strong>¿Cuánto cuesta pintar una habitación de 4x4?</strong><br/>
-    Desde <strong>$130.000</strong> (mano de obra) — lista en un día.
-  </div>
-
-  <p class="price-note">
-    Valores de referencia de mano de obra, para superficies en buen estado. Trabajos con preparación previa (masillado profundo, humedad, alturas) se cotizan en la visita. Podemos trabajar con materiales incluidos o solo mano de obra.<br/>
-    Última actualización: agosto 2026.
-  </p>
-
-  <div class="price-cta">
-    <a class="btn-wa" href="https://wa.me/5491173569165?text=Hola%2C%20vi%20los%20precios%20en%20la%20p%C3%A1gina%20y%20quiero%20un%20presupuesto%20para%20mi%20casa.">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-      Pedí tu presupuesto exacto
-    </a>
-    <p class="sub">Respuesta rápida · Visita y presupuesto sin cargo</p>
-  </div>
-</section>
-
-<section class="faq-section">
-  <div class="eyebrow">Preguntas frecuentes</div>
-  <div class="section-title">Lo que nos suelen<br/>preguntar</div>
-
-  <div class="faq-item open">
-    <div class="faq-q">¿Los materiales están incluidos en el presupuesto? <span class="arr">▼</span></div>
-    <div class="faq-a">Podemos trabajar de las dos formas: con materiales incluidos o solo mano de obra si ya tenés los materiales. Lo aclaramos en el presupuesto para que no haya confusiones.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">¿Cuánto tarda en pintarse una habitación? <span class="arr">▼</span></div>
-    <div class="faq-a">Una habitación estándar con dos manos de látex generalmente se termina en un día. Si hay preparación de superficie puede llevar un día más. Te damos el cronograma exacto en el presupuesto.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">¿Hay que estar en casa mientras trabajan? <span class="arr">▼</span></div>
-    <div class="faq-a">No es obligatorio. Coordinamos el acceso y podemos trabajar de forma autónoma. Al terminar el día te mandamos fotos del avance por WhatsApp.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">¿Cómo pido el presupuesto? <span class="arr">▼</span></div>
-    <div class="faq-a">Escribinos por WhatsApp contándonos qué necesitás. Coordinamos una visita sin cargo y te damos el precio por escrito antes de empezar.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">¿Hacen trabajos chicos o solo obras grandes? <span class="arr">▼</span></div>
-    <div class="faq-a">Hacemos de todo: desde pintar una sola habitación o colgar un TV hasta refacciones completas. Consultanos sin compromiso.</div>
-  </div>
-</section>
-
-<div class="zona-section">
-  <div class="zona-inner">
-    <div class="eyebrow">Zona de cobertura</div>
-    <div class="section-title" style="margin-bottom:10px">Dónde llegamos</div>
-    <p>Avellaneda, Lanús y Lomas de Zamora — sin costo de traslado.</p>
-    <div class="zona-tags">
-      <span>Avellaneda</span>
-      <span>Lanús</span>
-      <span>Lomas de Zamora</span>
-      <span>Banfield</span>
-      <span>Temperley</span>
-      <span>Sarandí</span>
-      <span>Gerli</span>
-      <span>Wilde</span>
-      <span>Valentín Alsina</span>
-      <span>Lanús Oeste</span>
-      <span>Remedios de Escalada</span>
-      <span>Dock Sud</span>
-    </div>
-  </div>
-</div>
-
-<section class="cta-section">
-  <h2>¿Qué necesita<br/><em>tu casa</em> hoy?</h2>
-  <p>Escribinos y te respondemos con un presupuesto sin cargo.</p>
-  <a class="btn-wa" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    Escribinos por WhatsApp
-  </a>
-</section>
-
-<footer>
-© 2025 · Resuelto · Servicios del hogar · Avellaneda, Lanús y Lomas de Zamora
-</footer>
-
-<a class="wa-float" href="https://wa.me/5491173569165?text=Hola%2C%20necesito%20un%20presupuesto%20para%20mi%20casa.%20%C2%BFPod%C3%A9s%20ayudarme%3F" aria-label="WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
-
-<script>
-/* ── FAQ ── */
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    q.parentElement.classList.toggle('open');
-  });
-});
-
-/* ── CARRUSEL DE TRABAJOS ── */
-const trabajosTrack = document.querySelector('.trabajos-track');
-const trabajosAnterior = document.querySelector('.trabajos-anterior');
-const trabajosSiguiente = document.querySelector('.trabajos-siguiente');
-
-if(trabajosTrack && trabajosAnterior && trabajosSiguiente){
-  trabajosSiguiente.addEventListener('click', () => {
-    trabajosTrack.scrollBy({ left: 280, behavior: 'smooth' });
-  });
-
-  trabajosAnterior.addEventListener('click', () => {
-    trabajosTrack.scrollBy({ left: -280, behavior: 'smooth' });
-  });
-}
-</script>
-
+      btnSiguiente.addEventListener('click', () => {
+        track.scrollBy({ left: 280, behavior: 'smooth' });
+      });
+    }
+  </script>
 </body>
 </html>
