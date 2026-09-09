@@ -445,342 +445,153 @@ header{
 }
 
 
-<!-- ============================= -->
-<!-- TRABAJOS REALIZADOS -->
-<!-- ============================= -->
-
-<section class="trabajos-realizados">
-
-  <div class="trabajos-titulo">
-    <span>TRABAJOS REALIZADOS</span>
-    <h2>Antes y después</h2>
-    <p>Algunos de los trabajos que realizamos, transformando espacios con soluciones prácticas y prolijas.</p>
-  </div>
-
-  <div class="trabajos-carrusel">
-
-    <!-- Trabajo 1 -->
-    <div class="trabajo-card">
-      <div class="trabajo-imagenes">
-
-        <div class="trabajo-imagen">
-          <span>ANTES</span>
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/cocinadomantes.jpg"
-            alt="Cocina antes de la reforma"
-          >
-        </div>
-
-        <div class="trabajo-imagen">
-          <span>DESPUÉS</span>
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/cocinadomdespues.jpg"
-            alt="Cocina después de la reforma"
-          >
-        </div>
-
-      </div>
-
-      <h3>Reforma de cocina</h3>
-      <p>Renovación y optimización del espacio.</p>
-    </div>
-
-
-    <!-- Trabajo 2 -->
-    <div class="trabajo-card">
-      <div class="trabajo-imagenes">
-
-        <div class="trabajo-imagen">
-          <span>ANTES</span>
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/cocinapreantes.jpg"
-            alt="Cocina antes del trabajo"
-          >
-        </div>
-
-        <div class="trabajo-imagen">
-          <span>DESPUÉS</span>
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/cocinapredespues.jpg"
-            alt="Cocina después del trabajo"
-          >
-        </div>
-
-      </div>
-
-      <h3>Cocina a medida</h3>
-      <p>Diseño, fabricación e instalación.</p>
-    </div>
-
-
-    <!-- Trabajo 3 -->
-    <div class="trabajo-card">
-      <div class="trabajo-imagenes">
-
-        <div class="trabajo-imagen">
-          <span>ANTES</span>
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/pasilloantes.jpg"
-            alt="Pasillo antes de la reforma"
-          >
-        </div>
-
-        <div class="trabajo-imagen">
-          <span>DESPUÉS</span>
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/pasillodespues.jpg"
-            alt="Pasillo después de la reforma"
-          >
-        </div>
-
-      </div>
-
-      <h3>Renovación de pasillo</h3>
-      <p>Mejora estética y renovación del ambiente.</p>
-    </div>
-
-
-    <!-- Trabajo 4 -->
-    <div class="trabajo-card">
-      <div class="trabajo-imagenes">
-
-        <div class="trabajo-imagen">
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250226_163124088.jpg"
-            alt="Trabajo realizado"
-          >
-        </div>
-
-        <div class="trabajo-imagen">
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20250227_182940714.jpg"
-            alt="Trabajo realizado"
-          >
-        </div>
-
-      </div>
-
-      <h3>Proyecto realizado</h3>
-      <p>Trabajo terminado y listo para usar.</p>
-    </div>
-
-
-    <!-- Trabajo 5 -->
-    <div class="trabajo-card">
-      <div class="trabajo-imagenes">
-
-        <div class="trabajo-imagen trabajo-imagen-unica">
-          <img 
-            src="https://raw.githubusercontent.com/resueltoh/imagenes/main/IMG_20240608_174419307.jpg"
-            alt="Trabajo realizado"
-          >
-        </div>
-
-      </div>
-
-      <h3>Otro trabajo realizado</h3>
-      <p>Una muestra más de nuestros trabajos.</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-<style>
-
-  /* ============================= */
-  /* TRABAJOS REALIZADOS */
-  /* ============================= */
-
-  .trabajos-realizados {
-    background: #f4f7f1;
-    padding: 55px 20px;
-    overflow: hidden;
-  }
-
-  .trabajos-titulo {
-    max-width: 900px;
-    margin: 0 auto 28px;
-  }
-
-  .trabajos-titulo span {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #55734d;
-  }
-
-  .trabajos-titulo h2 {
-    margin: 6px 0 8px;
-    font-size: 27px;
-    line-height: 1.05;
-    color: #111;
-  }
-
-  .trabajos-titulo p {
-    margin: 0;
-    max-width: 600px;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #555;
-  }
-
-
-  /* CARRUSEL */
-
-  .trabajos-carrusel {
-    display: flex;
-    gap: 18px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 5px 5px 20px;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-
-    -webkit-overflow-scrolling: touch;
-
-    scrollbar-width: thin;
-  }
-
-  .trabajos-carrusel::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .trabajos-carrusel::-webkit-scrollbar-track {
-    background: #e3e8e0;
-    border-radius: 10px;
-  }
-
-  .trabajos-carrusel::-webkit-scrollbar-thumb {
-    background: #55734d;
-    border-radius: 10px;
-  }
-
-
-  /* TARJETAS */
-
-  .trabajo-card {
-    flex: 0 0 330px;
-    background: #fff;
-    border: 1px solid #dfe3dc;
-    border-radius: 8px;
-    overflow: hidden;
-    scroll-snap-align: start;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-
-
-  /* IMÁGENES */
-
-  .trabajo-imagenes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3px;
-    background: #ddd;
-  }
-
-  .trabajo-imagen {
-    position: relative;
-    height: 210px;
-    overflow: hidden;
-    background: #eee;
-  }
-
-  .trabajo-imagen-unica {
-    grid-column: 1 / -1;
-  }
-
-  .trabajo-imagen img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
-
-
-  /* ETIQUETAS ANTES / DESPUÉS */
-
-  .trabajo-imagen span {
-    position: absolute;
-    top: 9px;
-    left: 9px;
-    z-index: 2;
-
-    padding: 4px 7px;
-
-    background: rgba(255,255,255,0.92);
-    color: #333;
-
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-
-    border-radius: 3px;
-  }
-
-
-  /* TEXTO */
-
-  .trabajo-card h3 {
-    margin: 15px 16px 5px;
-
-    font-size: 16px;
-    line-height: 1.2;
-
-    color: #222;
-  }
-
-  .trabajo-card p {
-    margin: 0 16px 17px;
-
-    font-size: 12px;
-    line-height: 1.4;
-
-    color: #666;
-  }
-
-
-  /* ============================= */
-  /* CELULAR */
-  /* ============================= */
-
-  @media (max-width: 600px) {
-
-    .trabajos-realizados {
-      padding: 42px 15px;
-    }
-
-    .trabajos-titulo {
-      margin-bottom: 22px;
-    }
-
-    .trabajos-titulo h2 {
-      font-size: 24px;
-    }
-
-    .trabajos-titulo p {
-      font-size: 12px;
-    }
-
-    .trabajos-carrusel {
-      gap: 14px;
-      margin-right: -15px;
-      padding-right: 15px;
-    }
-
-    .trabajo-card {
-      flex: 0 0 82vw;
-      max-width: 340px;
-    }
-
-    .trabajo-imagen {
-      height: 200px;
-    }
-
-  }
-
-</style>
+/* ── TRABAJOS REALIZADOS ── */
+
+.trabajos-section{
+  background:var(--card);
+  border-top:1px solid var(--light);
+  border-bottom:1px solid var(--light);
+  padding:56px 24px;
+  overflow:hidden;
+}
+
+.trabajos-inner{
+  max-width:660px;
+  margin:0 auto;
+}
+
+.trabajos-sub{
+  color:var(--mid);
+  font-size:.88rem;
+  line-height:1.55;
+  margin:-16px 0 26px;
+  max-width:500px;
+}
+
+.trabajos-carrusel{
+  position:relative;
+  width:100%;
+}
+
+.trabajos-track{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  scrollbar-width:none;
+  padding:4px 2px 12px;
+  scroll-snap-type:x mandatory;
+  cursor:grab;
+}
+
+.trabajos-track:active{
+  cursor:grabbing;
+}
+
+.trabajos-track::-webkit-scrollbar{
+  display:none;
+}
+
+.trabajo-card{
+  position:relative;
+  flex:0 0 270px;
+  height:205px;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid var(--light);
+  background:var(--bg);
+  scroll-snap-align:start;
+  box-shadow:0 3px 12px rgba(0,0,0,.06);
+}
+
+.trabajo-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .3s ease;
+}
+
+.trabajo-card:hover img{
+  transform:scale(1.03);
+}
+
+.trabajo-info{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:34px 14px 13px;
+  background:linear-gradient(
+    transparent,
+    rgba(0,0,0,.78)
+  );
+  color:#fff;
+}
+
+.trabajo-info strong{
+  display:block;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:.85rem;
+}
+
+.trabajo-info span{
+  display:block;
+  font-size:.7rem;
+  opacity:.9;
+  margin-top:2px;
+}
+
+.trabajo-tag{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:2;
+  background:rgba(30,30,26,.82);
+  color:#fff;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  padding:5px 9px;
+  border-radius:5px;
+}
+
+.trabajos-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:38px;
+  height:38px;
+  border:1px solid var(--light);
+  border-radius:50%;
+  background:var(--card);
+  color:var(--accent);
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+  z-index:5;
+  box-shadow:0 3px 12px rgba(0,0,0,.12);
+  transition:transform .15s,background .15s;
+}
+
+.trabajos-btn:hover{
+  background:var(--tint);
+}
+
+.trabajos-anterior{
+  left:-18px;
+}
+
+.trabajos-siguiente{
+  right:-18px;
+}
+
+.trabajos-indicador{
+  text-align:center;
+  color:var(--mid);
+  font-size:.72rem;
+  margin-top:4px;
+}
 
 
 /* ── PRECIOS ── */
