@@ -445,152 +445,143 @@ header{
 }
 
 
-/* ── TRABAJOS REALIZADOS ── */
+<!-- ══════════════════════════════════════════════ -->
+<!-- TRABAJOS REALIZADOS -->
+<!-- ══════════════════════════════════════════════ -->
 
-.trabajos-section{
-  background:var(--card);
-  border-top:1px solid var(--light);
-  border-bottom:1px solid var(--light);
-  padding:56px 24px;
-  overflow:hidden;
-}
+<section class="trabajos-section">
 
-.trabajos-inner{
-  max-width:660px;
-  margin:0 auto;
-}
+<div class="trabajos-inner">
 
-.trabajos-sub{
-  color:var(--mid);
-  font-size:.88rem;
-  line-height:1.55;
-  margin:-16px 0 26px;
-  max-width:500px;
-}
+<div class="eyebrow">
+Trabajos realizados
+</div>
 
-.trabajos-carrusel{
-  position:relative;
-  width:100%;
-}
+<div class="section-title">
+Así trabajamos,<br/>
+así queda.
+</div>
 
-.trabajos-track{
-  display:flex;
-  gap:12px;
-  overflow-x:auto;
-  scroll-behavior:smooth;
-  scrollbar-width:none;
-  padding:4px 2px 12px;
-  scroll-snap-type:x mandatory;
-  cursor:grab;
-}
+<p class="trabajos-sub">
+Algunos de los trabajos que realizamos y transformaciones que logramos.
+</p>
 
-.trabajos-track:active{
-  cursor:grabbing;
-}
+<div class="trabajos-carrusel">
 
-.trabajos-track::-webkit-scrollbar{
-  display:none;
-}
+<button
+class="trabajos-btn trabajos-anterior"
+aria-label="Trabajo anterior">
+&#10094;
+</button>
 
-.trabajo-card{
-  position:relative;
-  flex:0 0 270px;
-  height:205px;
-  border-radius:10px;
-  overflow:hidden;
-  border:1px solid var(--light);
-  background:var(--bg);
-  scroll-snap-align:start;
-  box-shadow:0 3px 12px rgba(0,0,0,.06);
-}
+<div class="trabajos-track">
 
-.trabajo-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .3s ease;
-}
+<!-- COCINA DOMINICA -->
+<div class="trabajo-card">
+<img
+src="imagenes/CocinaDominica.png"
+alt="Refacción de cocina"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Refacción de cocina</strong>
+<span>Antes y después</span>
+</div>
+</div>
 
-.trabajo-card:hover img{
-  transform:scale(1.03);
-}
+<!-- COCINA PREVIND -->
+<div class="trabajo-card">
+<img
+src="imagenes/CocinaPrevind.png"
+alt="Renovación de cocina"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Renovación de cocina</strong>
+<span>Antes y después</span>
+</div>
+</div>
 
-.trabajo-info{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:34px 14px 13px;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,.78)
-  );
-  color:#fff;
-}
+<!-- PASILLO -->
+<div class="trabajo-card">
+<img
+src="imagenes/PasilloMb.png"
+alt="Pintura de pasillo"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Pintura de pasillo</strong>
+<span>Antes y después</span>
+</div>
+</div>
 
-.trabajo-info strong{
-  display:block;
-  font-family:'Plus Jakarta Sans',sans-serif;
-  font-size:.85rem;
-}
+<!-- SALA OSDE -->
+<div class="trabajo-card">
+<img
+src="imagenes/SalaOsde.png"
+alt="Renovación de sala"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Renovación de espacio</strong>
+<span>Antes y después</span>
+</div>
+</div>
 
-.trabajo-info span{
-  display:block;
-  font-size:.7rem;
-  opacity:.9;
-  margin-top:2px;
-}
+<!-- FOTOS JPG -->
+<div class="trabajo-card">
+<img
+src="imagenes/IMG_20250226_163124088.jpg"
+alt="Trabajo realizado"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Trabajo realizado</strong>
+<span>Renovación de espacio</span>
+</div>
+</div>
 
-.trabajo-tag{
-  position:absolute;
-  top:10px;
-  left:10px;
-  z-index:2;
-  background:rgba(30,30,26,.82);
-  color:#fff;
-  font-size:.62rem;
-  font-weight:700;
-  letter-spacing:.08em;
-  padding:5px 9px;
-  border-radius:5px;
-}
+<div class="trabajo-card">
+<img
+src="imagenes/IMG_20250227_182940714.jpg"
+alt="Trabajo realizado"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Trabajo realizado</strong>
+<span>Terminaciones y detalles</span>
+</div>
+</div>
 
-.trabajos-btn{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  width:38px;
-  height:38px;
-  border:1px solid var(--light);
-  border-radius:50%;
-  background:var(--card);
-  color:var(--accent);
-  font-size:18px;
-  font-weight:700;
-  cursor:pointer;
-  z-index:5;
-  box-shadow:0 3px 12px rgba(0,0,0,.12);
-  transition:transform .15s,background .15s;
-}
+<div class="trabajo-card">
+<img
+src="imagenes/IMG_20240608_174419307.jpg"
+alt="Trabajo realizado"
+loading="lazy"
+/>
+<div class="trabajo-info">
+<strong>Trabajo realizado</strong>
+<span>Puesta en valor</span>
+</div>
+</div>
 
-.trabajos-btn:hover{
-  background:var(--tint);
-}
+</div>
 
-.trabajos-anterior{
-  left:-18px;
-}
+<button
+class="trabajos-btn trabajos-siguiente"
+aria-label="Siguiente trabajo">
+&#10095;
+</button>
 
-.trabajos-siguiente{
-  right:-18px;
-}
+</div>
 
-.trabajos-indicador{
-  text-align:center;
-  color:var(--mid);
-  font-size:.72rem;
-  margin-top:4px;
+<div class="trabajos-indicador">
+Deslizá para ver los trabajos →
+</div>
+
+</div>
+
+</section>
 }
 
 
