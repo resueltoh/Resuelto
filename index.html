@@ -494,75 +494,52 @@ header{
 }
 
 .trabajo-card{
-  position:relative;
-  flex:0 0 270px;
-  height:205px;
+  flex:0 0 320px;
   border-radius:10px;
   overflow:hidden;
   border:1px solid var(--light);
-  background:var(--bg);
+  background:var(--card);
   scroll-snap-align:start;
   box-shadow:0 3px 12px rgba(0,0,0,.06);
 }
 
 .trabajo-card img{
   width:100%;
-  height:100%;
+  height:auto;
+  aspect-ratio:4/3;
   object-fit:cover;
   display:block;
-  transition:transform .3s ease;
+  background:var(--bg);
   pointer-events:none;
-  font-size: 0;
-}
-
-.trabajo-card:hover img{
-  transform:scale(1.03);
 }
 
 .trabajo-info{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  padding:34px 14px 13px;
-  background:linear-gradient(
-    transparent,
-    rgba(0,0,0,.78)
-  );
-  color:#fff;
-  pointer-events:none;
+  padding:12px 14px 14px;
+}
+
+.trabajo-tag{
+  display:inline-block;
+  background:var(--tint);
+  color:var(--accent);
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:4px 8px;
+  border-radius:5px;
+  margin-bottom:6px;
 }
 
 .trabajo-info strong{
   display:block;
   font-family:'Plus Jakarta Sans',sans-serif;
-  font-size:.85rem;
-}
-
-.trabajo-info span{
-  display:block;
-  font-size:.7rem;
-  opacity:.9;
-  margin-top:2px;
-}
-
-.trabajo-tag{
-  position:absolute;
-  top:10px;
-  left:10px;
-  z-index:2;
-  background:rgba(30,30,26,.82);
-  color:#fff;
-  font-size:.62rem;
-  font-weight:700;
-  letter-spacing:.08em;
-  padding:5px 9px;
-  border-radius:5px;
+  font-size:.95rem;
+  letter-spacing:-.01em;
 }
 
 .trabajos-btn{
   position:absolute;
-  top:50%;
+  top:calc(50% - 40px);
   transform:translateY(-50%);
   width:38px;
   height:38px;
@@ -575,7 +552,7 @@ header{
   cursor:pointer;
   z-index:5;
   box-shadow:0 3px 12px rgba(0,0,0,.12);
-  transition:transform .15s,background .15s;
+  transition:background .15s;
 }
 
 .trabajos-btn:hover{
@@ -595,6 +572,48 @@ header{
   color:var(--mid);
   font-size:.72rem;
   margin-top:4px;
+}
+
+.trabajos-videos-title{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-weight:700;
+  font-size:1.05rem;
+  margin:36px 0 14px;
+}
+
+.trabajos-videos{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.trabajo-video video{
+  width:100%;
+  aspect-ratio:9/16;
+  object-fit:cover;
+  display:block;
+  border-radius:10px;
+  background:var(--dark);
+  border:1px solid var(--light);
+}
+
+.trabajo-video span{
+  display:block;
+  font-size:.8rem;
+  font-weight:600;
+  margin-top:8px;
+  text-align:center;
+}
+
+.trabajos-cta{
+  margin-top:32px;
+  text-align:center;
+}
+
+.trabajos-cta p{
+  color:var(--mid);
+  font-size:.82rem;
+  margin-bottom:14px;
 }
 
 
@@ -853,8 +872,7 @@ footer{
   }
 
   .trabajo-card{
-    flex:0 0 78vw;
-    height:230px;
+    flex:0 0 82vw;
   }
 
   .trabajos-btn{
@@ -1283,308 +1301,114 @@ Operamos en Avellaneda, Lanús y Lomas de Zamora. Sin costo de traslado.
 
 
 <!-- ══════════════════════════════════════════════ -->
-<!-- TRABAJOS REALIZADOS (RUTAS CORREGIDAS) -->
+<!-- TRABAJOS REALIZADOS -->
 <!-- ══════════════════════════════════════════════ -->
 
-<section class="trabajos-section">
+<section class="trabajos-section" id="trabajos">
 
 <div class="trabajos-inner">
-
 
 <div class="eyebrow">
 Trabajos realizados
 </div>
-
 
 <div class="section-title">
 Así trabajamos,<br/>
 así queda.
 </div>
 
-
 <p class="trabajos-sub">
-Algunos de los trabajos que realizamos y transformaciones que logramos.
+Antes y después de trabajos reales que hicimos en zona sur.
 </p>
 
 
 <div class="trabajos-carrusel">
 
-
-<button
-class="trabajos-btn trabajos-anterior"
-aria-label="Trabajo anterior">
-&#10094;
-</button>
-
+<button class="trabajos-btn trabajos-anterior" aria-label="Trabajo anterior">&#10094;</button>
 
 <div class="trabajos-track">
 
-
-<!-- PAREJA 1: PASILLO (ANTES Y DESPUÉS) -->
+<div class="trabajo-card">
+<img src="trabajos/impermeabilizacion-techo.jpg" alt="Terraza antes y después de la impermeabilización" width="1200" height="900" loading="lazy"/>
+<div class="trabajo-info">
+<div class="trabajo-tag">Impermeabilización</div>
+<strong>Impermeabilización de techo</strong>
+</div>
+</div>
 
 <div class="trabajo-card">
-
-<div class="trabajo-tag">
-ANTES
-</div>
-
-<img
-src="pasilloantes.jpg"
-alt="Pasillo antes de remodelar"
-style="font-size: 0;"
-loading="lazy"
-/>
-
+<img src="trabajos/cielorraso-durlock.jpg" alt="Losa a la vista y cielorraso de durlock terminado con spots" width="1200" height="900" loading="lazy"/>
 <div class="trabajo-info">
-
-<strong>
-Remodelación de pasillo
-</strong>
-
-<span>
-Estado inicial
-</span>
-
+<div class="trabajo-tag">Durlock · Pintura</div>
+<strong>Cielorraso de durlock y pintura</strong>
 </div>
-
 </div>
-
 
 <div class="trabajo-card">
-
-<div class="trabajo-tag">
-DESPUÉS
-</div>
-
-<img
-src="pasillodespues.jpg"
-alt="Pasillo terminado"
-style="font-size: 0;"
-loading="lazy"
-/>
-
+<img src="trabajos/cocina-comedor.jpg" alt="Cocina-comedor antes y después de la renovación" width="1200" height="900" loading="lazy"/>
 <div class="trabajo-info">
-
-<strong>
-Remodelación de pasillo
-</strong>
-
-<span>
-Resultado final
-</span>
-
+<div class="trabajo-tag">Remodelación</div>
+<strong>Renovación de cocina-comedor</strong>
 </div>
-
 </div>
-
-
-<!-- PAREJA 2: COCINA DOM (ANTES Y DESPUÉS) -->
 
 <div class="trabajo-card">
-
-<div class="trabajo-tag">
-ANTES
-</div>
-
-<img
-src="cocinadomantes.jpg"
-alt="Cocina antes de remodelar"
-style="font-size: 0;"
-loading="lazy"
-/>
-
+<img src="trabajos/cocina.jpg" alt="Cocina antes y después de la renovación" width="1200" height="900" loading="lazy"/>
 <div class="trabajo-info">
-
-<strong>
-Renovación de cocina
-</strong>
-
-<span>
-Estado inicial
-</span>
-
+<div class="trabajo-tag">Remodelación · Pintura</div>
+<strong>Renovación de cocina</strong>
 </div>
-
 </div>
-
 
 <div class="trabajo-card">
-
-<div class="trabajo-tag">
-DESPUÉS
-</div>
-
-<img
-src="cocinadomdespues.jpg"
-alt="Cocina terminada"
-style="font-size: 0;"
-loading="lazy"
-/>
-
+<img src="trabajos/pasillo.jpg" alt="Pasillo con humedad antes y pintado después" width="1200" height="900" loading="lazy"/>
 <div class="trabajo-info">
-
-<strong>
-Renovación de cocina
-</strong>
-
-<span>
-Resultado final
-</span>
-
+<div class="trabajo-tag">Pintura</div>
+<strong>Reparación y pintura de pasillo</strong>
+</div>
 </div>
 
 </div>
 
-
-<!-- PAREJA 3: COCINA PRE (ANTES Y DESPUÉS) -->
-
-<div class="trabajo-card">
-
-<div class="trabajo-tag">
-ANTES
-</div>
-
-<img
-src="cocinapreantes.jpg"
-alt="Cocina antes de la refacción"
-style="font-size: 0;"
-loading="lazy"
-/>
-
-<div class="trabajo-info">
-
-<strong>
-Refacción de cocina
-</strong>
-
-<span>
-Estado inicial
-</span>
+<button class="trabajos-btn trabajos-siguiente" aria-label="Siguiente trabajo">&#10095;</button>
 
 </div>
-
-</div>
-
-
-<div class="trabajo-card">
-
-<div class="trabajo-tag">
-DESPUÉS
-</div>
-
-<img
-src="cocinapredespues.jpg"
-alt="Cocina después de la refacción"
-style="font-size: 0;"
-loading="lazy"
-/>
-
-<div class="trabajo-info">
-
-<strong>
-Refacción de cocina
-</strong>
-
-<span>
-Resultado final
-</span>
-
-</div>
-
-</div>
-
-
-<!-- FOTOS ADICIONALES -->
-
-<div class="trabajo-card">
-
-<img
-src="IMG_20240608_174419307.jpg"
-alt="Trabajo realizado"
-style="font-size: 0;"
-loading="lazy"
-/>
-
-<div class="trabajo-info">
-
-<strong>
-Trabajo terminado
-</strong>
-
-<span>
-Terminaciones de pintura
-</span>
-
-</div>
-
-</div>
-
-
-<div class="trabajo-card">
-
-<img
-src="IMG_20250226_163124088.jpg"
-alt="Trabajo de renovación"
-style="font-size: 0;"
-loading="lazy"
-/>
-
-<div class="trabajo-info">
-
-<strong>
-Espacio renovado
-</strong>
-
-<span>
-Mano de obra terminada
-</span>
-
-</div>
-
-</div>
-
-
-<div class="trabajo-card">
-
-<img
-src="IMG_20250227_182940714.jpg"
-alt="Detalle de terminación"
-style="font-size: 0;"
-loading="lazy"
-/>
-
-<div class="trabajo-info">
-
-<strong>
-Detalle de trabajo
-</strong>
-
-<span>
-Terminación y acabado
-</span>
-
-</div>
-
-</div>
-
-
-</div>
-
-
-<button
-class="trabajos-btn trabajos-siguiente"
-aria-label="Siguiente trabajo">
-&#10095;
-</button>
-
-
-</div>
-
 
 <div class="trabajos-indicador">
-Deslizá para ver los trabajos →
+Deslizá para ver más trabajos →
 </div>
 
+
+<div class="trabajos-videos-title">
+Mirá el antes y después en video
+</div>
+
+<div class="trabajos-videos">
+
+<div class="trabajo-video">
+<video src="trabajos/video-impermeabilizacion.mp4" poster="trabajos/video-impermeabilizacion.jpg" controls muted playsinline preload="none"></video>
+<span>Impermeabilización de techo</span>
+</div>
+
+<div class="trabajo-video">
+<video src="trabajos/video-durlock.mp4" poster="trabajos/video-durlock.jpg" controls muted playsinline preload="none"></video>
+<span>Cielorraso de durlock</span>
+</div>
+
+</div>
+
+
+<div class="trabajos-cta">
+
+<p>¿Tenés un trabajo parecido? Mandanos una foto y te pasamos el presupuesto.</p>
+
+<a class="btn-wa"
+href="https://wa.me/5491173569165?text=Hola%2C%20vi%20los%20trabajos%20en%20la%20p%C3%A1gina%20y%20quiero%20un%20presupuesto%20para%20mi%20casa.">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+Pedí tu presupuesto
+</a>
+
+</div>
 
 </div>
 
@@ -1959,19 +1783,24 @@ const trabajosAnterior = document.querySelector('.trabajos-anterior');
 const trabajosSiguiente = document.querySelector('.trabajos-siguiente');
 
 if(trabajosTrack){
+  const paso = () => {
+    const card = trabajosTrack.querySelector('.trabajo-card');
+    return card ? card.offsetWidth + 12 : 332;
+  };
+
   if(trabajosSiguiente){
     trabajosSiguiente.addEventListener('click',()=>{
-      trabajosTrack.scrollBy({ left: 282, behavior: 'smooth' });
+      trabajosTrack.scrollBy({ left: paso(), behavior: 'smooth' });
     });
   }
 
   if(trabajosAnterior){
     trabajosAnterior.addEventListener('click',()=>{
-      trabajosTrack.scrollBy({ left: -282, behavior: 'smooth' });
+      trabajosTrack.scrollBy({ left: -paso(), behavior: 'smooth' });
     });
   }
 
-  /* Soporte para arrastrar con mouse (Desktop Drag) */
+  /* Arrastrar con mouse (desktop) */
   let isDown = false;
   let startX;
   let scrollLeft;
@@ -1982,22 +1811,26 @@ if(trabajosTrack){
     scrollLeft = trabajosTrack.scrollLeft;
   });
 
-  trabajosTrack.addEventListener('mouseleave', () => {
-    isDown = false;
-  });
-
-  trabajosTrack.addEventListener('mouseup', () => {
-    isDown = false;
-  });
+  trabajosTrack.addEventListener('mouseleave', () => { isDown = false; });
+  trabajosTrack.addEventListener('mouseup', () => { isDown = false; });
 
   trabajosTrack.addEventListener('mousemove', (e) => {
     if(!isDown) return;
     e.preventDefault();
     const x = e.pageX - trabajosTrack.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    trabajosTrack.scrollLeft = scrollLeft - walk;
+    trabajosTrack.scrollLeft = scrollLeft - (x - startX) * 1.5;
   });
 }
+
+/* ── VIDEOS: uno a la vez ── */
+
+const trabajosVideos = document.querySelectorAll('.trabajo-video video');
+
+trabajosVideos.forEach(v => {
+  v.addEventListener('play', () => {
+    trabajosVideos.forEach(o => { if(o !== v) o.pause(); });
+  });
+});
 
 </script>
 
